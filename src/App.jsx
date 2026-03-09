@@ -73,11 +73,11 @@ function Nav() {
           Le migliori strutture in Emilia-Romagna
         </div>
         {/* CTA */}
-        <a href="mailto:info@romagna-affitti-brevi.it"
+        <a href="mailto:vittorio_negri@hotmail.com"
           style={{ background: C.gold, color: "#fff", padding: "0.45rem 1.1rem", fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", textDecoration: "none", fontFamily: "'DM Sans',sans-serif", transition: "background 0.2s" }}
           onMouseEnter={e => e.currentTarget.style.background = "#8a6520"}
           onMouseLeave={e => e.currentTarget.style.background = C.gold}>
-          Inserisci la tua struttura
+          Vuoi inserire qui la tua struttura? 
         </a>
       </div>
       <style>{`@media(min-width:768px){.nav-tagline{display:block!important}}`}</style>
