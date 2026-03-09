@@ -293,7 +293,7 @@ function CtaBanner() {
             Hai un appartamento, B&B o agriturismo in Emilia-Romagna? Contattaci per essere incluso nella nostra directory di strutture selezionate.
           </p>
           <a href="mailto:vittorio_negri@hotmail.com"
-            style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: C.gold, color: "#fff", padding: "0.95rem 2.25rem", fontSize: "0.78rem", fontWeight: 800, letterSpacing: "0.12em", textTransform: "uppercase", textDecoration: "none", fontFamily: "'DM Sans',sans-serif", boxShadow: "0 6px 24px rgba(160,120,42,0.22)", transition: "all 0.25s" }}
+            style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "0.5rem", background: C.gold, color: "#fff", padding: "0.8rem 1.5rem", fontSize: "0.75rem", fontWeight: 800, letterSpacing: "0.12em", textTransform: "uppercase", textDecoration: "none", fontFamily: "'DM Sans',sans-serif", transition: "background 0.2s", textAlign: "center" }}
             onMouseEnter={e => { e.currentTarget.style.background = "#8a6520"; e.currentTarget.style.transform = "translateY(-2px)"; }}
             onMouseLeave={e => { e.currentTarget.style.background = C.gold; e.currentTarget.style.transform = "translateY(0)"; }}>
             Contattaci ↗
