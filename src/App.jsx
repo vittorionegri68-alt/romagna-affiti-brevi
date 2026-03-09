@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { strutture } from "./strutture.js";
+import { strutture } from "./Strutture.js";
 
 // ── Color tokens (same palette as Casa Cavour sites) ──────────────────────────
 const C = {
