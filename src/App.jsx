@@ -78,13 +78,13 @@ function Nav() {
   onMouseEnter={e => e.currentTarget.style.background = "#8a6520"}
   onMouseLeave={e => e.currentTarget.style.background = C.gold}>
   <span className="nav-cta-long">Vuoi inserire qui la tua struttura?</span>
-  <span className="nav-cta-short">Inserisci la tua struttura</span>
+  <span className="nav-cta-short">✉️</span>
 </a>
       </div>
       <style>{`
   @media(min-width:768px){.nav-tagline{display:block!important}}
   .nav-cta-short{display:none}
-  @media(max-width:600px){
+  @media(max-width:768px){
     .nav-cta-long{display:none}
     .nav-cta-short{display:inline}
   }
