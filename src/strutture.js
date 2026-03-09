@@ -13,7 +13,7 @@
 
 // ── Importa immagini locali (decommenta quando hai il file fisico su GitHub) ──
 // import casaCavourCover from './assets/Strutture/casa-cavour/cover.jpg'
-
+import casaCavourCover from './assets/Strutture/casa-cavour/cover.jpg'
 export const strutture = [
   {
     id: "casa-cavour",
@@ -22,7 +22,7 @@ export const strutture = [
     // Sostituisci questo URL con una tua foto (Airbnb, Google Photos, ecc.)
     // Quando hai il file locale, sostituisci questa riga con: cover: casaCavourCover,
     // Quando hai il file locale, sostituisci con: cover: casaCavourCover,
-    cover: "https://a0.muscache.com/im/pictures/hosting/Hosting-1028155990762038132/original/be7cfef4-3b37-4e6d-9a6e-f9cb5d3b7e3e.jpeg",
+    cover: casaCavourCover,
     localita: "Bertinoro (FC)",
     regione: "Emilia-Romagna",
     tipologia: "Appartamento",
