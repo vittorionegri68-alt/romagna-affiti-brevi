@@ -70,7 +70,7 @@ function Nav() {
         </div>
         {/* Tagline */}
         <div style={{ fontFamily: "'DM Sans',sans-serif", fontSize: "0.72rem", color: C.textSoft, letterSpacing: "0.1em", display: "none" }} className="nav-tagline">
-          Le migliori strutture in Emilia-Romagna
+          Le migliori strutture in Romagna
         </div>
         {/* CTA */}
         <a href="mailto:vittorio_negri@hotmail.com"
@@ -108,13 +108,13 @@ function Hero({ count }) {
       <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", zIndex: 1 }}>
         <div style={{ opacity: loaded ? 1 : 0, transform: loaded ? "translateY(0)" : "translateY(14px)", transition: "all 0.6s ease 0.1s", display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.1rem" }}>
           <span style={{ display: "inline-block", width: 28, height: 1, background: C.gold }} />
-          <span style={{ fontSize: "0.65rem", letterSpacing: "0.28em", color: C.gold, textTransform: "uppercase", fontFamily: "'DM Sans',sans-serif" }}>Emilia-Romagna · Italia</span>
+          <span style={{ fontSize: "0.65rem", letterSpacing: "0.28em", color: C.gold, textTransform: "uppercase", fontFamily: "'DM Sans',sans-serif" }}> Romagna · Italia</span>
         </div>
         <h1 style={{ opacity: loaded ? 1 : 0, transform: loaded ? "translateY(0)" : "translateY(22px)", transition: "all 0.75s ease 0.22s", fontFamily: "'Cormorant Garamond','Playfair Display',serif", fontSize: "clamp(2.4rem,5vw,4.5rem)", color: C.text, fontWeight: 700, lineHeight: 1.05, letterSpacing: "-0.02em", marginBottom: "1.1rem", maxWidth: 720 }}>
           Le migliori strutture<br /><span style={{ color: C.gold, fontStyle: "italic" }}>in Romagna.</span>
         </h1>
         <p style={{ opacity: loaded ? 1 : 0, transform: loaded ? "translateY(0)" : "translateY(18px)", transition: "all 0.75s ease 0.36s", fontSize: "clamp(0.9rem,1.6vw,1.05rem)", color: C.textMid, lineHeight: 1.8, maxWidth: 560, fontFamily: "'DM Sans',sans-serif", marginBottom: "2rem" }}>
-          Appartamenti, B&B, ville e agriturismi selezionati in Emilia-Romagna. Strutture verificate, prenotazione diretta su Airbnb.
+          Appartamenti, B&B, ville e agriturismi selezionati in Romagna. Strutture verificate, prenotazione diretta su Airbnb.
         </p>
         <div style={{ opacity: loaded ? 1 : 0, transition: "opacity 0.7s ease 0.5s", display: "flex", gap: "2.5rem", flexWrap: "wrap" }}>
           {[
@@ -290,7 +290,7 @@ function CtaBanner() {
             Inserisci la tua struttura<br /><span style={{ color: C.gold, fontStyle: "italic" }}>nella nostra bacheca.</span>
           </h2>
           <p style={{ fontSize: "0.92rem", color: C.textMid, lineHeight: 1.8, fontFamily: "'DM Sans',sans-serif", marginBottom: "2rem" }}>
-            Hai un appartamento, B&B o agriturismo in Emilia-Romagna? Contattaci per essere incluso nella nostra directory di strutture selezionate.
+            Hai un appartamento, B&B o agriturismo in Romagna? Contattaci per essere incluso nella nostra directory di strutture selezionate.
           </p>
           <a href="mailto:vittorio_negri@hotmail.com"
             style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "0.5rem", background: C.gold, color: "#fff", padding: "0.8rem 1.5rem", fontSize: "0.75rem", fontWeight: 800, letterSpacing: "0.12em", textTransform: "uppercase", textDecoration: "none", fontFamily: "'DM Sans',sans-serif", transition: "background 0.2s", textAlign: "center" }}
@@ -311,7 +311,7 @@ function Footer() {
       <div style={{ maxWidth: 1280, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "1rem" }}>
         <div>
           <div style={{ fontFamily: "'Cormorant Garamond','Playfair Display',serif", fontSize: "1rem", color: C.gold, fontWeight: 700, letterSpacing: "0.08em", marginBottom: "0.3rem" }}>ROMAGNA AFFITTI BREVI</div>
-          <div style={{ fontFamily: "'DM Sans',sans-serif", fontSize: "0.72rem", color: "rgba(255,255,255,0.4)", letterSpacing: "0.1em" }}>Directory strutture · Emilia-Romagna · Italia</div>
+          <div style={{ fontFamily: "'DM Sans',sans-serif", fontSize: "0.72rem", color: "rgba(255,255,255,0.4)", letterSpacing: "0.1em" }}>Directory strutture · Romagna · Italia</div>
         </div>
         <div style={{ fontFamily: "'DM Sans',sans-serif", fontSize: "0.7rem", color: "rgba(255,255,255,0.3)" }}>
           © {new Date().getFullYear()} Romagna Affitti Brevi · Tutti i diritti riservati
