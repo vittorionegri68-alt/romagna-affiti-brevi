@@ -74,13 +74,21 @@ function Nav() {
         </div>
         {/* CTA */}
         <a href="mailto:vittorio_negri@hotmail.com"
-          style={{ background: C.gold, color: "#fff", padding: "0.45rem 1.1rem", fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", textDecoration: "none", fontFamily: "'DM Sans',sans-serif", transition: "background 0.2s" }}
-          onMouseEnter={e => e.currentTarget.style.background = "#8a6520"}
-          onMouseLeave={e => e.currentTarget.style.background = C.gold}>
-          Vuoi inserire qui la tua struttura? 
-        </a>
+  style={{ background: C.gold, color: "#fff", padding: "0.45rem 1.1rem", fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", textDecoration: "none", fontFamily: "'DM Sans',sans-serif", transition: "background 0.2s" }}
+  onMouseEnter={e => e.currentTarget.style.background = "#8a6520"}
+  onMouseLeave={e => e.currentTarget.style.background = C.gold}>
+  <span className="nav-cta-long">Vuoi inserire qui la tua struttura?</span>
+  <span className="nav-cta-short">Inserisci la tua struttura</span>
+</a>
       </div>
-      <style>{`@media(min-width:768px){.nav-tagline{display:block!important}}`}</style>
+      <style>{`
+  @media(min-width:768px){.nav-tagline{display:block!important}}
+  .nav-cta-short{display:none}
+  @media(max-width:600px){
+    .nav-cta-long{display:none}
+    .nav-cta-short{display:inline}
+  }
+`}</style>
     </nav>
   );
 }
