@@ -41,7 +41,7 @@
 
 import casaCavourCover from './assets/Strutture/casa-cavour/cover.jpg'
 import perlacover from './assets/Strutture/perla/cover.jpg'
-
+import scalinocover from './assets/Strutture/teatro/cover.jpg'
 export const strutture = [
   {
     id: "casa-cavour",
@@ -97,6 +97,32 @@ export const strutture = [
     prezzo_da: 120,
     url: "https://www.airbnb.it/rooms/1310946139319199865?adults=4&search_mode=regular_search&check_in=2025-03-20&check_out=2025-03-25&children=0&infants=0&pets=0&source_impression_id=p3_1742416555_P3xjNrF5P55kSM1D&previous_page_section_name=1000&federated_search_id=54d46396-a5b9-4f12-919f-4386ba2ec412",
     airbnb: "https://www.airbnb.it/rooms/1310946139319199865?adults=4&search_mode=regular_search&check_in=2025-03-20&check_out=2025-03-25&children=0&infants=0&pets=0&source_impression_id=p3_1742416555_P3xjNrF5P55kSM1D&previous_page_section_name=1000&federated_search_id=54d46396-a5b9-4f12-919f-4386ba2ec412",
+    attivo: true,
+  },
+ {
+    id: "Scalino-66",
+    nome: "Scalino 66",
+    cover: scalinocover,
+    localita: "Cesena (FC)",
+    regione: "Emilia-Romagna",
+    tipologia: "Appartamento",
+    ospiti: 2,
+    camere: 1,
+    bagni: 1,
+    animali: true,
+    descrizione: "Luminoso bilocale appena ristrutturato al terzo piano senza ascensore, nel centro storico di Cesena. Scalino 66 prende il nome dal numero di scalini che è necessario salire per arrivare all'appartamento.",
+    tag: ["WiFi", "Cucina completa", "A/C","Luminoso","Self check-in"],
+    distanze: [
+      { luogo: "Cesenatico", tempo: "25 min" },
+      { luogo: "San Marino", tempo: "45 min" },
+      { luogo: "Rimini", tempo: "30 min" },
+      
+    ],
+    rating: 5.0,
+    recensioni: 12,
+    prezzo_da: 125,
+    url: "https://www.airbnb.it/rooms/1388960535225462602?source_impression_id=p3_1773137227_P3LTxQgztVFjnYT2",
+    airbnb: "https://www.airbnb.it/rooms/1388960535225462602?source_impression_id=p3_1773137227_P3LTxQgztVFjnYT2",
     attivo: true,
   },
 ];
