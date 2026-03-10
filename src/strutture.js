@@ -110,7 +110,7 @@ export const strutture = [
     camere: 1,
     bagni: 1,
     animali: true,
-    descrizione: "Luminoso bilocale appena ristrutturato al terzo piano senza ascensore, nel centro storico di Cesena. Scalino 66 prende il nome dal numero di scalini che è necessario salire per arrivare all'appartamento.",
+    descrizione: "Luminoso bilocale appena ristrutturato al terzo piano senza ascensore, nel centro storico di Cesena, a pochi passi da bar, ristoranti e servizi pubblici. Scalino 66 prende il nome dal numero di scalini che è necessario salire per arrivare all'appartamento.",
     tag: ["WiFi", "Cucina completa", "A/C","Luminoso","Centro Storio","Self check-in"],
     distanze: [
       { luogo: "Cesenatico", tempo: "25 min" },
