@@ -38,6 +38,7 @@
 
 // ── Importa immagini locali (decommenta quando hai il file fisico su GitHub) ──
 // import casaCavourCover from './assets/Strutture/casa-cavour/cover.jpg'
+
 import casaCavourCover from './assets/Strutture/casa-cavour/cover.jpg'
 import perlacover from './assets/Strutture/perla/cover.jpg'
 
@@ -45,10 +46,6 @@ export const strutture = [
   {
     id: "casa-cavour",
     nome: "Casa Cavour",
-    // ── USA UN URL ESTERNO finché non hai cover.jpg locale ───────────────────
-    // Sostituisci questo URL con una tua foto (Airbnb, Google Photos, ecc.)
-    // Quando hai il file locale, sostituisci questa riga con: cover: casaCavourCover,
-    // Quando hai il file locale, sostituisci con: cover: casaCavourCover,
     cover: casaCavourCover,
     localita: "Bertinoro (FC)",
     regione: "Emilia-Romagna",
@@ -77,10 +74,6 @@ export const strutture = [
  {
     id: "La-Perla-del-Mare",
     nome: "La Perla del Mare",
-    // ── USA UN URL ESTERNO finché non hai cover.jpg locale ───────────────────
-    // Sostituisci questo URL con una tua foto (Airbnb, Google Photos, ecc.)
-    // Quando hai il file locale, sostituisci questa riga con: cover: casaCavourCover,
-    // Quando hai il file locale, sostituisci con: cover: casaCavourCover,
     cover: perlacover,
     localita: "Cesenatico (FC)",
     regione: "Emilia-Romagna",
