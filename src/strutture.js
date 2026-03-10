@@ -92,7 +92,7 @@ export const strutture = [
     distanze: [
       { luogo: "Parco di Levante", tempo: "4 min" },
       { luogo: "Mare", tempo: "400 mt" },
-      { luogo: "Cesena", tempo: "15 min" }
+      { luogo: "Cesena", tempo: "15 min" },
       { luogo: "San Marino", tempo: "35 min" },
       { luogo: "Rimini", tempo: "40 min" },
       { luogo: "Bologna", tempo: "60 min" },
