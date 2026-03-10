@@ -40,6 +40,7 @@
 // import casaCavourCover from './assets/Strutture/casa-cavour/cover.jpg'
 import casaCavourCover from './assets/Strutture/casa-cavour/cover.jpg'
 import PerlaCover from './assets/Strutture/perla/cover.jpg'
+
 export const strutture = [
   {
     id: "casa-cavour",
@@ -88,7 +89,7 @@ export const strutture = [
     camere: 2,
     bagni: 1,
     animali: true,
-    descrizione: "Situato nel cuore di Cesenatico, a pochi passi dal mare, Perla del Mare è l’alloggio perfetto per famiglie e gruppi di amici. Ascensore, balconi e garage rendono questo appartamento ideale per ogni tipo di ospite, anche per chi lavora in smart grazie al Wi-fi veloce.",
+    descrizione: "Nel cuore di Cesenatico, vicino al mare. Perla del Mare è l’alloggio perfetto per famiglie e gruppi di amici. Ascensore, balconi e garage rendono questo appartamento ideale per ogni tipo di ospite, anche per chi lavora in smart grazie al Wi-fi veloce.",
     tag: ["WiFi fibra", "Cucina completa", "A/C","Ascensore","Biciclette","Box Auto Privato","Self check-in"],
     distanze: [
       { luogo: "Parco di Levante", tempo: "4 min" },
