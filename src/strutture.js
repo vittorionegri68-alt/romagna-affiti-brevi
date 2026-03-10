@@ -41,7 +41,7 @@
 
 import casaCavourCover from './assets/Strutture/casa-cavour/cover.jpg'
 import perlacover from './assets/Strutture/perla/cover.jpg'
-import scalinocover from './assets/Strutture/teatro/cover.jpg'
+import scalinocover from './assets/Strutture/Teatro/cover.jpg'
 export const strutture = [
   {
     id: "casa-cavour",
