@@ -158,6 +158,7 @@ function StrutturaCard({ s, delay }) {
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         style={{
+          height: "100%",
           background: C.cardBg,
           boxShadow: hovered ? "0 12px 40px rgba(26,22,18,0.14)" : C.shadow,
           transform: hovered ? "translateY(-4px)" : "translateY(0)",
@@ -372,6 +373,7 @@ export default function App() {
                 display: "grid",
                 gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
                 gap: "1.5rem",
+                alignItems: "stretch",
               }} className="strutture-grid">
                 {visibili.map((s, i) => (
                   <StrutturaCard key={s.id} s={s} delay={i * 80} />
