@@ -95,17 +95,6 @@ function Nav() {
     onMouseLeave={e => e.currentTarget.style.color = C.textSoft}>
     EN
   </a>
-  {/* Language switcher — mobile */}
-<div style={{ display: "flex", gap: "0.25rem", alignItems: "center" }}>
-  <a href="https://romagna-affitti-brevi.vercel.app/"
-    style={{ color: C.gold, textDecoration: "none", fontSize: "0.75rem", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'DM Sans',sans-serif", padding: "0.3rem 0.4rem" }}>
-    IT
-  </a>
-  <span style={{ color: C.border, fontSize: "0.75rem" }}>|</span>
-  <a href="https://romagna-short-stay.vercel.app/"
-    style={{ color: C.textSoft, textDecoration: "none", fontSize: "0.75rem", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'DM Sans',sans-serif", padding: "0.3rem 0.4rem" }}>
-    EN
-  </a>
 </div>
 </div>
       </div>
