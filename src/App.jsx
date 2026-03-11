@@ -96,7 +96,6 @@ function Nav() {
     EN
   </a>
 </div>
-</div>
       </div>
       <style>{`
   @media(min-width:768px){.nav-tagline{display:block!important}}
