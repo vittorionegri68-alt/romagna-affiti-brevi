@@ -42,6 +42,8 @@
 import casaCavourCover from './assets/Strutture/casa-cavour/cover.jpg'
 import perlacover from './assets/Strutture/perla/cover.jpg'
 import scalinocover from './assets/Strutture/Teatro/cover.jpg'
+import garibaldinacover from './assets/Strutture/garibaldina/cover.jpg'
+
 export const strutture = [
   {
     id: "casa-cavour",
@@ -156,7 +158,7 @@ export const strutture = [
  {
   id: 'garibaldina-75',
   nome: 'Garibaldina 75',
-  cover: 'cover-garibaldina-75.jpg',
+  cover: garibaldinacover,
   localita: 'Cesena, FC',
   regione: 'Emilia-Romagna',
   tipologia: 'Appartamento',
