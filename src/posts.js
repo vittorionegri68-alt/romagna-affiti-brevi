@@ -1,82 +1,123 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// posts.js — Articoli del blog per La Perla del Mare
+// posts.js — Articoli del blog per Casa Cavour (versione italiana)
+//
+// Come aggiungere un nuovo articolo:
+// 1. Copia uno dei blocchi qui sotto
+// 2. Cambia id, titolo, data, categoria, sommario e contenuto
+// 3. Salva — l'articolo appare automaticamente nella sezione Blog
 // ─────────────────────────────────────────────────────────────────────────────
-
+ 
 export const posts = [
   {
-    id: "cosa-fare-cesenatico-weekend",
-    titolo: "5 cose da fare a Cesenatico in un weekend",
-    data: "2025-03-10",
-    categoria: "Guida locale",
-    sommario: "Cesenatico non e solo mare e spiaggia — e una citta ricca di storia, natura e ottimo cibo. Ecco 5 esperienze autentiche da non perdere durante il tuo soggiorno.",
+    id: "Aprile in Romagna",
+    titolo: "Aprile è il mese perfetto per scoprire la Romagna culturale lontano dalla folla estiva.",
+    data: "2026-04-1",
+    categoria: "Eventi",
+    sommario: "Hai mai pensato che i borghi medievali fossero musei all'aperto da vedere solo d'estate?",
     contenuto: [
-      { tipo: "paragrafo", testo: "Cesenatico sorprende sempre chi la visita per la prima volta. Conosciuta soprattutto come meta balneare, nasconde tesori storici, naturalistici e gastronomici che la rendono una destinazione perfetta tutto l'anno." },
-      { tipo: "titoletto", testo: "1. Il Porto Canale Leonardesco" },
-      { tipo: "paragrafo", testo: "Il porto canale di Cesenatico fu progettato da Leonardo da Vinci nel 1502 su incarico di Cesare Borgia. Oggi e uno dei simboli della citta, con i tipici trabaccoli romagnoli ancorati lungo le rive. Passeggiare lungo il porto al tramonto e un'esperienza indimenticabile." },
-      { tipo: "titoletto", testo: "2. Il Museo della Marineria" },
-      { tipo: "paragrafo", testo: "Sul porto canale si trova il Museo della Marineria — uno dei musei navali piu belli d'Italia. Otto imbarcazioni storiche restaurate raccontano la storia della navigazione adriatica. Imperdibile anche con i bambini." },
-      { tipo: "titoletto", testo: "3. Il Parco di Levante" },
-      { tipo: "paragrafo", testo: "A soli 4 minuti a piedi da La Perla del Mare, il Parco di Levante offre 40 ettari di prato, pineta, pioppi e querce. Due laghetti con fauna selvatica, area dog-friendly e sentieri perfetti per una passeggiata mattutina." },
-      { tipo: "titoletto", testo: "4. Pesce fresco al mercato" },
-      { tipo: "paragrafo", testo: "Il mercato del pesce di Cesenatico e uno dei piu animati della Riviera. La mattina presto i pescherecci scaricano il pescato fresco — orate, branzini, seppie, scampi. I ristoranti del porto cucinano il pesce del giorno in modo semplice e straordinario." },
-      { tipo: "titoletto", testo: "5. Giro in bicicletta sul lungomare" },
-      { tipo: "paragrafo", testo: "Con le biciclette incluse nel garage di La Perla del Mare puoi percorrere il lungo lungomare di Cesenatico fino a Cervia o in direzione Rimini. La pista ciclabile costiera e tra le piu belle d'Italia — piatta, panoramica e sempre ventilata." },
+      {
+        tipo: "paragrafo",
+        testo: "Sbagliato. Aprile è il mese perfetto per scoprire la Romagna culturale lontano dalla folla estiva."
+      },
+      {
+        tipo: "titoletto",
+        testo: "Le colline romagnole"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "Le colline romagnole si risvegliano. I vicoli di Bertinoro, Longiano e Verucchio si riempiono di luce primaverile. Temperature mite, niente code, e finalmente riesci a parlare con chi ci vive davvero."
+      },
+      {
+        tipo: "titoletto",
+        testo: "Casa Cavour: il punto di partenza perfetto per i fine settimana di Aprile"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "Aprile 2026 porta con sé una Romagna che investe forte sulla cultura. La Regione ha stanziato 34 milioni per valorizzare non solo la Riviera, ma anche l'entroterra. "
+      },
+
+     {
+        tipo: "paragrafo",
+       testo: "Il risultato? Più eventi nei borghi, più accessibilità, più attenzione ai piccoli comuni."
+      },
+      {
+        tipo: "paragrafo",
+        testo: "A Bertinoro il Castello Malaspina riapre i battenti con visite guidate ogni weekend (€5, prenotazione consigliata). Da lì il panorama abbraccia la costa fino a Rimini. "
+      },
+      {
+        tipo: "paragrafo",
+        testo: "Longiano ospita il Museo Italiano della Ghisa e la Fondazione Tito Balestra — arte contemporanea in un borgo che profuma di pietra e glicine."
+      },
+      {
+        tipo: "paragrafo",
+        testo: "Verucchio, patria dei Malatesta, custodisce uno dei musei archeologici più sorprendenti della regione. Da Casa Cavour bastano 15 minuti per raggiungere Longiano, 20 per Verucchio. Pasqua in Romagna quest'anno non è solo mare. È storia, è arte, è scoprire che dietro ogni porta c'è una storia che nessuno racconta sui dépliant turistici."
+      },
+     {
+        tipo: "paragrafo",
+        testo: "Da Casa Cavour bastano 15 minuti per raggiungere Longiano, 20 per Verucchio. Pasqua in Romagna quest'anno non è solo mare."
+      },
+     {
+        tipo: "paragrafo",
+        testo: "È storia, è arte, è scoprire che dietro ogni porta c'è una storia che nessuno racconta sui dépliant turistici."
+      },
+      {
+        tipo: "titoletto",
+        testo: "Seguici anche sui nostri canali Social media"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "ogni settimana pubblichiamo sui nostri social madia informazioni Culturali culinarie e turistiche della Romagna"
+      },
+     {
+        tipo: "link",
+        testo: "https://www.instagram.com/bnb_bertinoro/"
+      },
+      {
+        tipo: "link",
+        testo: "https://www.facebook.com/profile.php?id=61577458010505"
+     }
     ],
     attivo: true,
   },
-  {
-    id: "riviera-romagnola-vacanze-famiglia",
-    titolo: "La Riviera Romagnola con i bambini: la guida completa",
-    data: "2025-03-18",
-    categoria: "Famiglia",
-    sommario: "Cesenatico e dintorni sono una delle destinazioni piu family-friendly d'Italia. Parchi, spiagge attrezzate, musei interattivi e cibo che piace a tutti. Ecco la nostra guida.",
-    contenuto: [
-      { tipo: "paragrafo", testo: "La Riviera Romagnola e da decenni la meta preferita delle famiglie italiane per le vacanze estive. E non e un caso — spiagge piatte e sicure, servizi eccellenti, parchi divertimento e una cucina che mette d'accordo grandi e piccini." },
-      { tipo: "titoletto", testo: "Perche Cesenatico con i bambini" },
-      { tipo: "paragrafo", testo: "Cesenatico e a misura di bambino come poche altre localita. Il mare e basso e sicuro, il lungomare e percorribile in bicicletta senza traffico, i parchi sono a portata di piedi. La Perla del Mare e l'alloggio ideale per le famiglie: ascensore, box privato, camere separate e cucina completa." },
-      { tipo: "titoletto", testo: "Il Parco Kinderland" },
-      { tipo: "paragrafo", testo: "A soli 2 minuti a piedi da La Perla del Mare, il Parco Kinderland e un paradiso per i piu piccoli. Giostre, scivoli, aree gioco e animazione — i bambini non vogliono piu andare via." },
-      { tipo: "titoletto", testo: "Mirabilandia e Italia in Miniatura" },
-      { tipo: "paragrafo", testo: "A 30-40 minuti da Cesenatico si trovano due dei parchi divertimento piu famosi d'Italia. Mirabilandia e il piu grande parco italiano, con montagne russe e attrazioni per tutte le eta. Italia in Miniatura a Rimini e un classico intramontabile." },
-      { tipo: "titoletto", testo: "La spiaggia" },
-      { tipo: "paragrafo", testo: "Le spiagge di Cesenatico sono attrezzatissime — ombrelloni, sdraio, docce, bar, animazione e servizi bagnino. Il mare e basso per molti metri, ideale per i piu piccoli. In bicicletta da La Perla del Mare ci si arriva in 5 minuti." },
-    ],
-    attivo: true,
-  },
-  {
-    id: "cesenatico-fuori-stagione",
-    titolo: "Cesenatico fuori stagione: perche visitarla in primavera o autunno",
-    data: "2025-04-01",
-    categoria: "Ispirazione",
-    sommario: "Cesenatico non e solo estate. In primavera e autunno la Riviera si trasforma — meno folla, prezzi bassi, natura splendida e la stessa ottima cucina. Ecco perche vale la pena venirci.",
-    contenuto: [
-      { tipo: "paragrafo", testo: "La maggior parte dei turisti conosce Cesenatico solo d'estate. Ma chi viene in primavera o in autunno scopre una localita completamente diversa — piu autentica, piu silenziosa, e per certi versi ancora piu bella." },
-      { tipo: "titoletto", testo: "Primavera: la stagione perfetta" },
-      { tipo: "paragrafo", testo: "Da aprile a giugno Cesenatico offre temperature miti, spiagge quasi deserte e prezzi molto piu bassi rispetto all'estate. Il mare inizia a scaldarsi, il lungomare e piacevolissimo in bicicletta e i ristoranti sono aperti senza code." },
-      { tipo: "titoletto", testo: "Autunno: colori e sapori" },
-      { tipo: "paragrafo", testo: "Settembre e ottobre sono mesi straordinari sulla Riviera. L'acqua del mare e ancora calda, la folla si dirada ma tutti i servizi sono ancora aperti. E la stagione delle sagre romagnole — piadina, crescioni, vino novello." },
-      { tipo: "titoletto", testo: "Smart working al mare" },
-      { tipo: "paragrafo", testo: "La Perla del Mare e perfetta per i nomadi digitali e i remote workers. WiFi fibra veloce, scrivania dedicata, cucina completa per cucinare in autonomia e la spiaggia vuota a 400 metri. Lavorare con il suono del mare in sottofondo e un lusso che pochi si permettono." },
-      { tipo: "titoletto", testo: "Gite nell'entroterra" },
-      { tipo: "paragrafo", testo: "Fuori stagione e il momento ideale per esplorare l'entroterra romagnolo. Bertinoro, il Balcone della Romagna, e a 25 minuti. Cesena con la sua magnifica Biblioteca Malatestiana e a 15 minuti. San Marino a 35 minuti." },
-    ],
-    attivo: true,
-  },
-  {
+ {
     id: "giro-italia-cervia-2026",
-    titolo: "Il Giro d'Italia parte da Cervia: vivi la tappa dalla Riviera",
+    titolo: "Il Giro d'Italia passa da Cervia: vivi la tappa da Casa Cavour",
     data: "2026-04-15",
     categoria: "Eventi",
-    sommario: "Il 17 maggio 2026 Cervia ospita la partenza della 9a tappa del Giro d'Italia. A soli 15 minuti da La Perla del Mare, un evento da non perdere. Scarica i nostri poster in omaggio.",
+    sommario: "Il 17 maggio 2026 Cervia ospita la partenza della nona tappa del Giro d'Italia 2026. A soli 30 minuti da Casa Cavour, un evento da non perdere. Scarica i nostri poster in omaggio.",
     contenuto: [
-      { tipo: "paragrafo", testo: "Il 17 maggio 2026 la Riviera Romagnola si tinge di rosa. Cervia ospita la partenza della nona tappa della 109a edizione del Giro d'Italia — 184 km di grande ciclismo con arrivo in salita al Corno alle Scale, sull'Appennino bolognese. Una tappa che si annuncia decisiva per la classifica generale." },
-      { tipo: "titoletto", testo: "La tappa nel dettaglio" },
-      { tipo: "paragrafo", testo: "La partenza ufficiale (km 0) sara da Piazza Andrea Costa, con il percorso cittadino che attraversera via Nazario Sauro, il Lungomare d'Annunzio, viale Roma e via Martiri Fantini prima di lasciare Cervia in direzione Appennino. Per Cervia si tratta della quinta presenza del Giro — un traguardo storico che la citta celebrera tingendosi di rosa, in concomitanza con la storica festa dello Sposalizio del Mare." },
-      { tipo: "titoletto", testo: "La Perla del Mare: la base perfetta per l'evento" },
-      { tipo: "paragrafo", testo: "Cervia dista appena 15 minuti da Cesenatico in auto o in bicicletta lungo il lungomare. Soggiornare a La Perla del Mare significa avere una base comoda, accessoriata e a due passi dal mare per vivere questo evento straordinario senza lo stress di trovare alloggio a Cervia — dove i prezzi schizzeranno alle stelle nei giorni intorno alla tappa." },
-      { tipo: "paragrafo", testo: "Con le biciclette incluse nel garage puoi persino pedalare fino a Cervia lungo la pista ciclabile costiera e assistere al passaggio della carovana rosa in modo autentico, come fanno i veri appassionati di ciclismo." },
-      { tipo: "titoletto", testo: "Scarica i nostri poster in omaggio" },
-      { tipo: "paragrafo", testo: "Per celebrare questo evento abbiamo creato due poster dedicati alla tappa Cervia - Corno alle Scale. Sono completamente gratuiti e scaricabili liberamente." },
+      {
+        tipo: "paragrafo",
+        testo: "Il 17 maggio 2026 la Riviera Romagnola si tinge di rosa. Cervia ospita la partenza della nona tappa della 109ª edizione del Giro d'Italia — 184 km di grande ciclismo con arrivo in salita al Corno alle Scale, sull'Appennino bolognese. Una tappa che si annuncia decisiva per la classifica generale."
+      },
+      {
+        tipo: "titoletto",
+        testo: "La tappa nel dettaglio"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "La partenza ufficiale (km 0) sarà da Piazza Andrea Costa, con il percorso cittadino che attraverserà via Nazario Sauro, il Lungomare d'Annunzio, viale Roma e via Martiri Fantini prima di lasciare Cervia in direzione Appennino. Per Cervia si tratta della quinta presenza del Giro — un traguardo storico che la città celebrerà tingendosi di rosa, in concomitanza con la storica festa dello Sposalizio del Mare."
+      },
+      {
+        tipo: "titoletto",
+        testo: "Casa Cavour: la base perfetta per l'evento"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "Bertinoro dista appena 30 minuti da Cervia in auto. Soggiornare a Casa Cavour significa avere una base comoda, elegante e autentica per vivere questo evento straordinario senza lo stress di trovare alloggio sulla costa — dove i prezzi schizzeranno alle stelle nei giorni intorno alla tappa."
+      },
+      {
+        tipo: "paragrafo",
+        testo: "Puoi assistere alla partenza da Cervia la mattina del 17 maggio, respirare l'atmosfera rosa della carovana del Giro, e tornare la sera nel silenzio delle colline romagnole con un calice di Sangiovese. Il meglio dei due mondi."
+      },
+      {
+        tipo: "titoletto",
+        testo: "Scarica i nostri poster in omaggio"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "Per celebrare questo evento abbiamo creato due poster dedicati alla tappa Cervia - Corno alle Scale. Sono completamente gratuiti e scaricabili liberamente — un ricordo da tenere o da stampare per l'occasione."
+      },
       {
         tipo: "download",
         label1: "Scarica Poster 1",
@@ -84,8 +125,160 @@ export const posts = [
         label2: "Scarica Poster 2",
         src2: "/Cervia_2.png"
       },
-      { tipo: "titoletto", testo: "Informazioni pratiche" },
-      { tipo: "paragrafo", testo: "Data: domenica 17 maggio 2026. Partenza: Piazza Andrea Costa, Cervia (RA). Arrivo: Corno alle Scale (BO). Distanza: 184 km. Tappa: 9a della 109a edizione del Giro d'Italia." },
+      {
+        tipo: "titoletto",
+        testo: "Informazioni pratiche"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "Data: domenica 17 maggio 2026. Partenza: Piazza Andrea Costa, Cervia (RA). Arrivo: Corno alle Scale (BO). Distanza: 184 km. Tappa: 9ª della 109ª edizione del Giro d'Italia."
+      }
+    ],
+    attivo: true,
+  },
+  {
+    id: "5-cose-da-fare-bertinoro",
+    titolo: "5 cose da fare a Bertinoro in un weekend",
+    data: "2025-03-10",
+    categoria: "Guida locale",
+    sommario: "Bertinoro non è solo il Balcone della Romagna — è un borgo medievale ricco di esperienze autentiche. Ecco 5 cose da non perdere durante il tuo soggiorno.",
+    contenuto: [
+      {
+        tipo: "paragrafo",
+        testo: "Bertinoro è uno di quei luoghi che sorprende sempre. A soli 15 minuti da Cesena, questo borgo medievale arroccato sulle colline romagnole offre panorami mozzafiato sull'Adriatico e un'atmosfera autentica lontana dal turismo di massa."
+      },
+      {
+        tipo: "titoletto",
+        testo: "1. Passeggia per il centro storico"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "Le stradine del centro storico di Bertinoro sono un labirinto affascinante di vicoli medievali, palazzi storici e scorci panoramici. La Colonna dell'Ospitalità — un anello di ferro dove i visitatori venivano invitati a legare il proprio cavallo e diventare ospiti dei bertinoresi — è il simbolo del famoso spirito accogliente della città."
+      },
+      {
+        tipo: "titoletto",
+        testo: "2. Visita la Rocca Albornoziana"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "La Rocca domina il borgo dall'alto e ospita oggi il Centro Residenziale Universitario di Bertinoro. Vale la pena salire per ammirare la vista a 360 gradi sulle colline romagnole fino all'Adriatico. Nelle giornate limpide si intravedono persino le Alpi."
+      },
+      {
+        tipo: "titoletto",
+        testo: "3. Fai un wine tour tra le cantine locali"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "La zona di Bertinoro è famosa per l'Albana di Romagna DOCG — il primo vino bianco italiano a ottenere la denominazione di origine controllata e garantita. A soli 10 minuti in auto si trovano alcune delle cantine storiche più belle della regione. Molte offrono degustazioni su prenotazione."
+      },
+      {
+        tipo: "titoletto",
+        testo: "4. Assapora la cucina romagnola autentica"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "Piadina, tagliatelle al ragù, passatelli in brodo, squacquerone. Bertinoro ha una manciata di osterie e trattorie dove i locali mangiano da generazioni. Chiedete a chi vi ospita dove vanno i bertinoresi veri — non finire in un posto per turisti."
+      },
+      {
+        tipo: "titoletto",
+        testo: "5. Ammira il tramonto dal belvedere"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "Il belvedere panoramico di Bertinoro è uno dei più belli della Romagna. Al tramonto, quando la luce dora le colline e il mare Adriatico brilla all'orizzonte, capisci perché questo borgo viene chiamato il Balcone della Romagna. Portati una bottiglia di Sangiovese locale e goditi lo spettacolo."
+      }
+    ],
+    attivo: true,
+  },
+  {
+    id: "affitti-brevi-romagna-cosa-vedere",
+    titolo: "Affitti brevi in Romagna: cosa vedere nei dintorni di Cesena",
+    data: "2025-03-18",
+    categoria: "Territorio",
+    sommario: "Scegliere un affitto breve nella zona di Cesena significa avere accesso a mare, colline, borghi medievali e ottimo cibo — tutto a portata di auto. Ecco la nostra guida.",
+    contenuto: [
+      {
+        tipo: "paragrafo",
+        testo: "La Romagna è una regione straordinariamente varia. In meno di un'ora d'auto si passa dalla Riviera Adriatica all'Appennino, attraversando borghi medievali, vigneti e città d'arte. Soggiornare in un affitto breve vicino a Cesena — come Casa Cavour a Bertinoro — significa avere questo intero territorio a portata di mano."
+      },
+      {
+        tipo: "titoletto",
+        testo: "Il mare: Cesenatico e la Riviera"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "A 30 minuti da Bertinoro, Cesenatico è uno dei borghi marinari più autentici della Riviera. Il porto canale leonardesco — progettato da Leonardo da Vinci nel 1502 — è uno spettacolo unico. D'estate le spiagge sono animate e il pesce fresco al porto è imperdibile. Rimini, con la sua storia millenaria e le sue spiagge, è a soli 40 minuti."
+      },
+      {
+        tipo: "titoletto",
+        testo: "San Marino: la Repubblica più antica del mondo"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "A 35 minuti da Bertinoro sorge la Repubblica di San Marino, lo stato indipendente più antico del mondo. Le tre torri medievali che dominano il monte Titano sono un simbolo iconico. Vale assolutamente una mezza giornata — l'ingresso al centro storico è gratuito."
+      },
+      {
+        tipo: "titoletto",
+        testo: "Ravenna: i mosaici bizantini"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "A 50 minuti da Bertinoro, Ravenna è Patrimonio UNESCO per i suoi straordinari mosaici bizantini. I mausolei e le basiliche del V e VI secolo conservano i mosaici meglio conservati al mondo. Una visita culturale imperdibile durante un soggiorno in Romagna."
+      },
+      {
+        tipo: "titoletto",
+        testo: "Bologna: la grassa, la dotta, la rossa"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "A 60 minuti da Bertinoro (in auto o in treno da Cesena), Bologna offre uno dei centri storici medievali più belli d'Italia, una gastronomia leggendaria e una vita culturale vivace. Ideale per una gita di un giorno."
+      }
+    ],
+    attivo: true,
+  },
+  {
+    id: "bertinoro-weekend-romantico",
+    titolo: "Perché Bertinoro è il posto perfetto per un weekend romantico",
+    data: "2025-03-25",
+    categoria: "Ispirazione",
+    sommario: "Colline dorate, tramonti sull'Adriatico, vino locale e un appartamento di design solo per voi. Scopri perché Bertinoro è la meta romantica perfetta in Romagna.",
+    contenuto: [
+      {
+        tipo: "paragrafo",
+        testo: "Stai cercando una fuga romantica lontana dal caos delle città, ma non vuoi rinunciare al comfort e alla bellezza? Bertinoro, il Balcone della Romagna, è la risposta. Un borgo medievale sulle colline romagnole che combina paesaggi straordinari, cucina eccellente e un ritmo di vita lento e autentico."
+      },
+      {
+        tipo: "titoletto",
+        testo: "Un appartamento tutto per voi"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "A differenza di un hotel, un appartamento come Casa Cavour vi dà la libertà di vivere il borgo come veri locali. Fare la spesa al mercato mattutino, cucinare con i prodotti freschi della zona, aprire una bottiglia di Albana al tramonto sul belvedere. Intimità e autenticità che nessun hotel può offrire."
+      },
+      {
+        tipo: "titoletto",
+        testo: "Il tramonto piu bello della Romagna"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "Il belvedere panoramico di Bertinoro offre uno dei tramonti piu spettacolari della regione. Quando il sole scende dietro le colline e il mare Adriatico si tinge di arancione all'orizzonte, il momento diventa magico. Portatevi un bicchiere di Sangiovese e godetevi lo spettacolo insieme."
+      },
+      {
+        tipo: "titoletto",
+        testo: "Cene indimenticabili"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "La cucina romagnola è fatta per essere condivisa. Tagliatelle al ragu tirate a mano, piadina calda con squacquerone e rucola, passatelli in brodo, costine di maiale alla brace. Le trattorie di Bertinoro e dintorni sono luoghi dove il tempo si ferma e ogni pasto diventa un ricordo."
+      },
+      {
+        tipo: "titoletto",
+        testo: "Un wine tour tra i vigneti"
+      },
+      {
+        tipo: "paragrafo",
+        testo: "A 10 minuti da Bertinoro si trovano alcune delle cantine piu caratteristiche della Romagna. Un pomeriggio tra i filari, con degustazione di Albana DOCG e Sangiovese, e uno dei modi piu romantici per scoprire il territorio. Molte cantine accettano visite su prenotazione — chiedete a noi per i contatti giusti."
+      }
     ],
     attivo: true,
   },
