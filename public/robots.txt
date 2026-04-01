@@ -1,0 +1,5 @@
+# robots.txt — La Perla del Mare
+User-agent: *
+Allow: /
+
+Sitemap: https://La-Perla-Cesenatico.vercel.app/sitemap.xml
