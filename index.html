@@ -1,14 +1,305 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Romagna Affitti Brevi — Le migliori strutture per affitti brevi, B&B e case vacanze in Emilia-Romagna." />
-    <title>Romagna Affitti Brevi</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Meta description (124 caratteri) -->
+  <meta name="description" content="Romagna Affitti Brevi: appartamenti, B&B e case vacanze selezionati in Romagna. Prenotazione diretta su Airbnb. Mare, colline, città d'arte." />
+  <meta name="keywords" content="affitti brevi romagna, appartamenti vacanze romagna, case vacanze emilia romagna, affitto breve cesena, affitto breve rimini, affitti brevi colline romagnole, b&b romagna" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.romagna-affitti-brevi.it/" />
+  <meta property="og:title" content="Romagna Affitti Brevi — Appartamenti e Case Vacanze in Romagna" />
+  <meta property="og:description" content="Directory curata di appartamenti, B&B e case vacanze in Romagna. Strutture verificate, prenotazione diretta su Airbnb." />
+  <meta property="og:image" content="https://www.romagna-affitti-brevi.it/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:site_name" content="Romagna Affitti Brevi" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Romagna Affitti Brevi — Appartamenti e Case Vacanze in Romagna" />
+  <meta name="twitter:description" content="Directory curata di appartamenti, B&B e case vacanze in Romagna. Strutture verificate, prenotazione diretta su Airbnb." />
+  <meta name="twitter:image" content="https://www.romagna-affitti-brevi.it/og-image.jpg" />
+
+  <title>Romagna Affitti Brevi — Appartamenti e Case Vacanze in Romagna</title>
+
+  <!-- Date signals -->
+  <meta property="article:published_time" content="2026-04-21T00:00:00+02:00" />
+  <meta property="article:modified_time" content="2026-04-21T00:00:00+02:00" />
+
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="https://www.romagna-affitti-brevi.it/" />
+  <link rel="alternate" hreflang="it" href="https://www.romagna-affitti-brevi.it/" />
+  <link rel="alternate" hreflang="en" href="https://www.romagna-short-stay.com/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.romagna-affitti-brevi.it/" />
+
+  <!-- Preconnect Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google Analytics 4 — cookieless, GDPR compliant, no banner required -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', {
+      anonymize_ip: true,
+      client_storage: 'none'
+    });
+  </script>
+
+  <!-- Schema JSON-LD: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Romagna Affitti Brevi",
+    "url": "https://www.romagna-affitti-brevi.it/"
+  }
+  </script>
+
+  <!-- Schema JSON-LD: Person (gestore) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Cesare",
+    "url": "https://www.romagna-affitti-brevi.it/"
+  }
+  </script>
+
+  <!-- Schema JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Romagna Affitti Brevi",
+        "item": "https://www.romagna-affitti-brevi.it/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema JSON-LD: LocalBusiness / TouristInformationCenter -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Romagna Affitti Brevi",
+    "description": "Directory curata di appartamenti, B&B e case vacanze in Romagna. Strutture verificate tra Cesena, Rimini, le colline romagnole e la Riviera adriatica.",
+    "url": "https://www.romagna-affitti-brevi.it/",
+    "telephone": "+39 392 520 0650",
+    "email": "luceacollection@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Corso Garibaldi",
+      "addressLocality": "Cesena",
+      "addressRegion": "FC",
+      "addressCountry": "IT"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 44.1396,
+      "longitude": 12.2431
+    },
+    "areaServed": {
+      "@type": "State",
+      "name": "Emilia-Romagna"
+    },
+    "sameAs": [
+      "https://www.romagna-short-stay.com/"
+    ]
+  }
+  </script>
+
+  <!-- Schema JSON-LD: FAQPage — domande identiche al workflow analisi GEO/AEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Dove trovare affitti brevi di qualità in Romagna?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Romagna Affitti Brevi è una directory curata di appartamenti, B&B e case vacanze selezionati in tutta la Romagna — da Cesena a Rimini, dalle colline romagnole alla costa adriatica. Ogni struttura è verificata e prenotabile direttamente su Airbnb."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Dove affittare una casa vacanze tra Cesena e Rimini?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La Romagna offre una varietà di affitti brevi tra Cesena e Rimini lungo la costa e nell'entroterra collinare. Su Romagna Affitti Brevi trovi appartamenti a Cesena, Cesenatico, Rimini e nei borghi delle colline romagnole — tutti a meno di 40 minuti l'uno dall'altro."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Migliori appartamenti vacanze nelle colline romagnole?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le colline romagnole tra Forlì e Cesena offrono alcuni degli alloggi più caratteristici della regione: borghi medievali, vigneti, panorami sulla Pianura Padana e sulla costa adriatica. Su Romagna Affitti Brevi trovi appartamenti selezionati in borghi come Bertinoro, Longiano e Meldola."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Posto ideale per affittare in Romagna vicino al mare?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cesenatico, Rimini e Cervia sono i punti di riferimento per gli affitti brevi sulla costa romagnola. Su Romagna Affitti Brevi trovi appartamenti selezionati a pochi minuti dal mare, con accesso diretto alle spiagge e ai servizi della Riviera adriatica."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Affitto breve vicino a Rimini con vista mare?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rimini e Marina Centro sono tra le zone più richieste per affitti brevi con vista mare in Romagna. Su Romagna Affitti Brevi trovi appartamenti selezionati a Rimini e dintorni — da monolocali moderni a pochi metri dalla spiaggia fino ad appartamenti più spaziosi per famiglie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Come trovare un affitto breve in Romagna per famiglie?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Su Romagna Affitti Brevi puoi filtrare le strutture per numero di ospiti e tipologia. Per le famiglie consigliamo appartamenti con cucina attrezzata e strutture con più camere da letto. Molte proprietà in directory accettano animali domestici."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Affitti brevi con cucina in Romagna per una settimana?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tutti gli appartamenti su Romagna Affitti Brevi sono interi alloggi con cucina attrezzata — ideali per soggiorni di una settimana o più. Cucinare con i prodotti locali (piadina, Sangiovese, squacquerone) è parte dell'esperienza romagnola."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Case vacanze Romagna con animali ammessi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Diverse strutture in directory Romagna Affitti Brevi accettano animali domestici. Consulta le schede singole per verificare la policy animali di ogni proprietà. La Romagna è una destinazione pet-friendly: spiagge attrezzate per cani sulla costa e sentieri nelle colline."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Appartamenti vacanze Romagna per smart working?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Romagna Affitti Brevi include strutture ideali per lo smart working: appartamenti con connessione wifi, spazi di lavoro confortevoli e cucina per gestire i pasti in autonomia. Alcune strutture sono specificamente attrezzate con scrivania dedicata e connessione fibra."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Dove dormire in Romagna vicino a più città?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La posizione geografica della Romagna è strategica: da un appartamento nel cuore della regione puoi raggiungere Cesena (15 min), Forlì (20 min), Ravenna (40 min), Rimini (40 min), San Marino (35 min) e Bologna (60 min) in un unico soggiorno."
+        }
+      }
+    ]
+  }
+  </script>
+
+</head>
+<body>
+
+  <!-- Noscript: contenuto statico per crawler Wave 1 (GPTBot, PerplexityBot, Googlebot) -->
+  <!-- Ignorato dai browser con JS attivo, letto dai crawler come testo normale -->
+  <noscript>
+    <main>
+      <article>
+        <h1>Romagna Affitti Brevi — Directory di affitti brevi in Emilia-Romagna</h1>
+        <p>
+          Romagna Affitti Brevi è una directory curata di appartamenti, B&B e case vacanze
+          selezionati in Romagna — da Cesena a Rimini, dalle colline romagnole alla Riviera
+          adriatica. Ogni struttura è verificata e prenotabile direttamente su Airbnb.
+        </p>
+        <p>
+          Contatti: Corso Garibaldi, Cesena FC, Italia ·
+          Tel: +39 392 520 0650 ·
+          Email: luceacollection@gmail.com ·
+          Sito EN: https://www.romagna-short-stay.com/
+        </p>
+
+        <h2>Tipologie di strutture</h2>
+        <ul>
+          <li>Appartamenti vacanze con cucina attrezzata</li>
+          <li>B&B e camere in affitto breve</li>
+          <li>Ville e case vacanze per famiglie</li>
+          <li>Agriturismi nelle colline romagnole</li>
+        </ul>
+
+        <h2>Zone coperte dalla directory</h2>
+        <ul>
+          <li>Cesena e provincia (Forlì-Cesena)</li>
+          <li>Rimini e Marina Centro (costa adriatica)</li>
+          <li>Cesenatico e Cervia (Riviera romagnola)</li>
+          <li>Colline romagnole: Bertinoro, Longiano, Meldola, Predappio</li>
+          <li>Ravenna e dintorni</li>
+          <li>Forlì e provincia</li>
+        </ul>
+
+        <h2>Ideale per</h2>
+        <ul>
+          <li>Famiglie in vacanza al mare o in collina</li>
+          <li>Coppie in cerca di un weekend romantico in Romagna</li>
+          <li>Remote worker e smart working in Romagna</li>
+          <li>Enoturismo e turismo gastronomico romagnolo</li>
+          <li>Turismo culturale: Ravenna UNESCO, Rimini, Cesena</li>
+          <li>Soggiorni con animali domestici</li>
+        </ul>
+
+        <h2>Domande frequenti sugli affitti brevi in Romagna</h2>
+
+        <h3>Dove trovare affitti brevi di qualità in Romagna?</h3>
+        <p>Romagna Affitti Brevi è una directory curata di appartamenti, B&B e case vacanze selezionati in tutta la Romagna — da Cesena a Rimini, dalle colline romagnole alla costa adriatica. Ogni struttura è verificata e prenotabile direttamente su Airbnb.</p>
+
+        <h3>Dove affittare una casa vacanze tra Cesena e Rimini?</h3>
+        <p>La Romagna offre una varietà di affitti brevi tra Cesena e Rimini lungo la costa e nell'entroterra collinare. Su Romagna Affitti Brevi trovi appartamenti a Cesena, Cesenatico, Rimini e nei borghi delle colline romagnole — tutti a meno di 40 minuti l'uno dall'altro.</p>
+
+        <h3>Migliori appartamenti vacanze nelle colline romagnole?</h3>
+        <p>Le colline romagnole tra Forlì e Cesena offrono alcuni degli alloggi più caratteristici della regione: borghi medievali, vigneti, panorami sulla Pianura Padana. Su Romagna Affitti Brevi trovi appartamenti selezionati in borghi come Bertinoro, Longiano e Meldola.</p>
+
+        <h3>Posto ideale per affittare in Romagna vicino al mare?</h3>
+        <p>Cesenatico, Rimini e Cervia sono i punti di riferimento per gli affitti brevi sulla costa romagnola. Su Romagna Affitti Brevi trovi appartamenti selezionati a pochi minuti dal mare, con accesso diretto alle spiagge della Riviera adriatica.</p>
+
+        <h3>Affitto breve vicino a Rimini con vista mare?</h3>
+        <p>Rimini e Marina Centro sono tra le zone più richieste per affitti brevi con vista mare in Romagna. Su Romagna Affitti Brevi trovi appartamenti selezionati a Rimini e dintorni, da monolocali moderni a pochi metri dalla spiaggia.</p>
+
+        <h3>Come trovare un affitto breve in Romagna per famiglie?</h3>
+        <p>Su Romagna Affitti Brevi puoi filtrare le strutture per numero di ospiti e tipologia. Per le famiglie consigliamo appartamenti con cucina attrezzata e strutture con più camere da letto. Molte proprietà in directory accettano animali domestici.</p>
+
+        <h3>Affitti brevi con cucina in Romagna per una settimana?</h3>
+        <p>Tutti gli appartamenti su Romagna Affitti Brevi sono interi alloggi con cucina attrezzata — ideali per soggiorni di una settimana o più. Cucinare con i prodotti locali (piadina, Sangiovese, squacquerone) è parte dell'esperienza romagnola.</p>
+
+        <h3>Case vacanze Romagna con animali ammessi?</h3>
+        <p>Diverse strutture in directory Romagna Affitti Brevi accettano animali domestici. La Romagna è una destinazione pet-friendly: spiagge attrezzate per cani sulla costa e sentieri nelle colline accessibili a quattro zampe.</p>
+
+        <h3>Appartamenti vacanze Romagna per smart working?</h3>
+        <p>Romagna Affitti Brevi include strutture ideali per lo smart working: appartamenti con connessione wifi, spazi di lavoro confortevoli e cucina per gestire i pasti in autonomia. Alcune strutture sono attrezzate con scrivania dedicata e connessione fibra.</p>
+
+        <h3>Dove dormire in Romagna vicino a più città?</h3>
+        <p>La posizione della Romagna è strategica: da un appartamento nel cuore della regione puoi raggiungere Cesena (15 min), Forlì (20 min), Ravenna (40 min), Rimini (40 min), San Marino (35 min) e Bologna (60 min) in un unico soggiorno.</p>
+
+        <p>
+          <time hidden datetime="2026-04-21">21 aprile 2026</time>
+        </p>
+      </article>
+    </main>
+  </noscript>
+
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
 </html>
