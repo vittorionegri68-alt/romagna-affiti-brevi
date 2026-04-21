@@ -95,6 +95,7 @@ function Nav() {
             { label: "Strutture", href: "#strutture" },
             { label: "Blog", href: "#blog" },
             { label: "FAQ", href: "#faq" },
+            { label: "EN", href: "https://www.romagna-short-stay.com/" },
           ].map(({ label, href }) => (
             <a key={href} href={href} style={{
               fontFamily: "'DM Sans',sans-serif", fontSize: "0.75rem",
@@ -561,6 +562,7 @@ function Footer() {
               { label: "Strutture", href: "#strutture" },
               { label: "Blog", href: "#blog" },
               { label: "FAQ", href: "#faq" },
+              { label: "EN Version", href: "https://www.romagna-short-stay.com/" },
             ].map(({ label, href }) => (
               <a key={href} href={href} style={{
                 fontFamily: "'DM Sans',sans-serif", fontSize: "0.72rem",
