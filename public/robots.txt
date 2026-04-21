@@ -1,5 +1,6 @@
-# robots.txt — La Perla del Mare
+# robots.txt — Romagna Affitti Brevi (IT)
 User-agent: *
 Allow: /
 
-Sitemap: https://La-Perla-Cesenatico.vercel.app/sitemap.xml
+# Sitemap location
+Sitemap: https://www.romagna-affitti-brevi.it/sitemap.xml
