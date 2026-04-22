@@ -60,21 +60,36 @@ function DiagonalDivider({ flip = false }) {
 // ── Nav ───────────────────────────────────────────────────────────────────────
 function Nav() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
     const h = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", h);
     return () => window.removeEventListener("scroll", h);
   }, []);
+
+  // Chiude il menu al click su un link
+  const handleLinkClick = () => setMenuOpen(false);
+
+  const navLinks = [
+    { label: "Strutture", href: "#strutture" },
+    { label: "Blog", href: "#blog" },
+    { label: "FAQ", href: "#faq" },
+  ];
+
   return (
     <nav style={{
       position: "fixed", top: 0, left: 0, right: 0, zIndex: 200,
-      background: scrolled ? "rgba(250,248,244,0.97)" : "rgba(250,248,244,0.88)",
+      background: scrolled || menuOpen ? "rgba(250,248,244,0.97)" : "rgba(250,248,244,0.88)",
       backdropFilter: "blur(14px)",
-      borderBottom: `1px solid ${scrolled ? "rgba(160,120,42,0.18)" : "rgba(160,120,42,0.07)"}`,
+      borderBottom: `1px solid ${scrolled || menuOpen ? "rgba(160,120,42,0.18)" : "rgba(160,120,42,0.07)"}`,
       transition: "all 0.4s ease",
     }}>
+      {/* Barra principale */}
       <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 1.5rem",
         display: "flex", alignItems: "center", justifyContent: "space-between", height: 64 }}>
+
+        {/* Logo */}
         <a href="#" style={{ display: "flex", alignItems: "center", gap: "0.7rem", textDecoration: "none" }}>
           <div style={{ width: 32, height: 32, background: C.gold,
             display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -90,18 +105,14 @@ function Nav() {
               lineHeight: 1, marginTop: 2 }}>Affitti Brevi</div>
           </div>
         </a>
-        <div style={{ display: "flex", alignItems: "center", gap: "1.5rem" }}>
-          {[
-            { label: "Strutture", href: "#strutture" },
-            { label: "Blog", href: "#blog" },
-            { label: "FAQ", href: "#faq" },
-            { label: "EN", href: "https://www.romagna-short-stay.com/" },
-          ].map(({ label, href }) => (
+
+        {/* Desktop links */}
+        <div className="nav-desktop" style={{ display: "flex", alignItems: "center", gap: "1.5rem" }}>
+          {navLinks.map(({ label, href }) => (
             <a key={href} href={href} style={{
               fontFamily: "'DM Sans',sans-serif", fontSize: "0.75rem",
               color: C.textMid, textDecoration: "none", letterSpacing: "0.08em",
-              textTransform: "uppercase", fontWeight: 500,
-              transition: "color 0.2s",
+              textTransform: "uppercase", fontWeight: 500, transition: "color 0.2s",
             }}
               onMouseEnter={e => e.currentTarget.style.color = C.gold}
               onMouseLeave={e => e.currentTarget.style.color = C.textMid}
@@ -114,15 +125,76 @@ function Nav() {
               fontFamily: "'DM Sans',sans-serif", transition: "background 0.2s" }}
             onMouseEnter={e => e.currentTarget.style.background = "#8a6520"}
             onMouseLeave={e => e.currentTarget.style.background = C.gold}>
-            <span className="nav-cta-long">Inserisci la tua struttura</span>
-            <span className="nav-cta-short">✉️</span>
+            Inserisci la tua struttura
           </a>
         </div>
+
+        {/* Hamburger button (mobile only) */}
+        <button
+          className="nav-hamburger"
+          onClick={() => setMenuOpen(o => !o)}
+          aria-label={menuOpen ? "Chiudi menu" : "Apri menu"}
+          style={{ display: "none", background: "transparent", border: "none",
+            cursor: "pointer", padding: "0.4rem", flexDirection: "column",
+            gap: "5px", alignItems: "center", justifyContent: "center" }}>
+          <span style={{
+            display: "block", width: 22, height: 2, background: C.gold,
+            transition: "all 0.3s ease",
+            transform: menuOpen ? "translateY(7px) rotate(45deg)" : "none",
+          }} />
+          <span style={{
+            display: "block", width: 22, height: 2, background: C.gold,
+            transition: "all 0.3s ease",
+            opacity: menuOpen ? 0 : 1,
+          }} />
+          <span style={{
+            display: "block", width: 22, height: 2, background: C.gold,
+            transition: "all 0.3s ease",
+            transform: menuOpen ? "translateY(-7px) rotate(-45deg)" : "none",
+          }} />
+        </button>
       </div>
+
+      {/* Menu tendina mobile */}
+      {menuOpen && (
+        <div className="nav-mobile-menu" style={{
+          borderTop: `1px solid ${C.border}`,
+          background: "rgba(250,248,244,0.98)",
+          padding: "1rem 1.5rem 1.5rem",
+          display: "flex", flexDirection: "column", gap: "0",
+        }}>
+          {navLinks.map(({ label, href }) => (
+            <a key={href} href={href} onClick={handleLinkClick}
+              style={{
+                fontFamily: "'DM Sans',sans-serif", fontSize: "0.9rem",
+                color: C.text, textDecoration: "none", letterSpacing: "0.08em",
+                textTransform: "uppercase", fontWeight: 500,
+                padding: "1rem 0",
+                borderBottom: `1px solid ${C.border}`,
+                display: "block",
+              }}>
+              {label}
+            </a>
+          ))}
+          <a href="mailto:luceacollection@gmail.com"
+            onClick={handleLinkClick}
+            style={{
+              display: "block", textAlign: "center",
+              background: C.gold, color: "#fff",
+              padding: "0.85rem 1rem", marginTop: "1rem",
+              fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.12em",
+              textTransform: "uppercase", textDecoration: "none",
+              fontFamily: "'DM Sans',sans-serif",
+            }}>
+            Inserisci la tua struttura
+          </a>
+        </div>
+      )}
+
       <style>{`
         @media(max-width:768px){
-          .nav-cta-long{display:none}
-          .nav-cta-short{display:inline}
+          .nav-desktop { display: none !important; }
+          .nav-hamburger { display: flex !important; }
         }
       `}</style>
     </nav>
@@ -562,7 +634,6 @@ function Footer() {
               { label: "Strutture", href: "#strutture" },
               { label: "Blog", href: "#blog" },
               { label: "FAQ", href: "#faq" },
-              { label: "EN Version", href: "https://www.romagna-short-stay.com/" },
             ].map(({ label, href }) => (
               <a key={href} href={href} style={{
                 fontFamily: "'DM Sans',sans-serif", fontSize: "0.72rem",
