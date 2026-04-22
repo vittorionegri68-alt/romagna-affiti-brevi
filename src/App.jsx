@@ -61,24 +61,19 @@ function DiagonalDivider({ flip = false }) {
 function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const handleLinkClick = () => setMenuOpen(false);
+  const navLinks = [
+    { label: "Properties", href: "#properties" },
+    { label: "Blog", href: "#blog" },
+    { label: "FAQ", href: "#faq" },
+    { label: "IT", href: "https://www.romagna-affitti-brevi.it/" },
+    { label: "EN", href: "https://www.romagna-short-stay.com/" },
+  ];
   useEffect(() => {
     const h = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", h);
     return () => window.removeEventListener("scroll", h);
   }, []);
-
-  // Chiude il menu al click su un link
-  const handleLinkClick = () => setMenuOpen(false);
-
-  const navLinks = [
-    { label: "Strutture", href: "#strutture" },
-    { label: "Blog", href: "#blog" },
-    { label: "FAQ", href: "#faq" },
-    { label: "EN", href: "https://www.romagna-short-stay.com/" },
-    { label: "IT", href: "https://www.romagna-affitti-brevi.it/" },
-  ];
-
   return (
     <nav style={{
       position: "fixed", top: 0, left: 0, right: 0, zIndex: 200,
@@ -87,11 +82,8 @@ function Nav() {
       borderBottom: `1px solid ${scrolled || menuOpen ? "rgba(160,120,42,0.18)" : "rgba(160,120,42,0.07)"}`,
       transition: "all 0.4s ease",
     }}>
-      {/* Barra principale */}
       <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 1.5rem",
         display: "flex", alignItems: "center", justifyContent: "space-between", height: 64 }}>
-
-        {/* Logo */}
         <a href="#" style={{ display: "flex", alignItems: "center", gap: "0.7rem", textDecoration: "none" }}>
           <div style={{ width: 32, height: 32, background: C.gold,
             display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -104,20 +96,22 @@ function Nav() {
               letterSpacing: "0.06em", lineHeight: 1 }}>ROMAGNA</div>
             <div style={{ fontFamily: "'DM Sans',sans-serif", fontSize: "0.56rem",
               color: C.textSoft, letterSpacing: "0.22em", textTransform: "uppercase",
-              lineHeight: 1, marginTop: 2 }}>Affitti Brevi</div>
+              lineHeight: 1, marginTop: 2 }}>Short Rentals</div>
           </div>
         </a>
-
-        {/* Desktop links */}
         <div className="nav-desktop" style={{ display: "flex", alignItems: "center", gap: "1.5rem" }}>
           {navLinks.map(({ label, href }) => (
-            <a key={href} href={href} style={{
-              fontFamily: "'DM Sans',sans-serif", fontSize: "0.75rem",
-              color: C.textMid, textDecoration: "none", letterSpacing: "0.08em",
-              textTransform: "uppercase", fontWeight: 500, transition: "color 0.2s",
-            }}
+            <a key={href} href={href}
+              target={href.startsWith("http") ? "_blank" : "_self"}
+              rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+              style={{
+                fontFamily: "'DM Sans',sans-serif", fontSize: "0.75rem",
+                color: label === "IT" ? C.textSoft : C.textMid,
+                textDecoration: "none", letterSpacing: "0.08em",
+                textTransform: "uppercase", fontWeight: 500, transition: "color 0.2s",
+              }}
               onMouseEnter={e => e.currentTarget.style.color = C.gold}
-              onMouseLeave={e => e.currentTarget.style.color = C.textMid}
+              onMouseLeave={e => e.currentTarget.style.color = label === "IT" ? C.textSoft : C.textMid}
             >{label}</a>
           ))}
           <a href="mailto:luceacollection@gmail.com"
@@ -127,72 +121,50 @@ function Nav() {
               fontFamily: "'DM Sans',sans-serif", transition: "background 0.2s" }}
             onMouseEnter={e => e.currentTarget.style.background = "#8a6520"}
             onMouseLeave={e => e.currentTarget.style.background = C.gold}>
-            Inserisci la tua struttura
+            List your property
           </a>
         </div>
-
-        {/* Hamburger button (mobile only) */}
-        <button
-          className="nav-hamburger"
-          onClick={() => setMenuOpen(o => !o)}
-          aria-label={menuOpen ? "Chiudi menu" : "Apri menu"}
+        <button className="nav-hamburger" onClick={() => setMenuOpen(o => !o)}
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
           style={{ display: "none", background: "transparent", border: "none",
             cursor: "pointer", padding: "0.4rem", flexDirection: "column",
             gap: "5px", alignItems: "center", justifyContent: "center" }}>
-          <span style={{
-            display: "block", width: 22, height: 2, background: C.gold,
+          <span style={{ display: "block", width: 22, height: 2, background: C.gold,
             transition: "all 0.3s ease",
-            transform: menuOpen ? "translateY(7px) rotate(45deg)" : "none",
-          }} />
-          <span style={{
-            display: "block", width: 22, height: 2, background: C.gold,
+            transform: menuOpen ? "translateY(7px) rotate(45deg)" : "none" }} />
+          <span style={{ display: "block", width: 22, height: 2, background: C.gold,
+            transition: "all 0.3s ease", opacity: menuOpen ? 0 : 1 }} />
+          <span style={{ display: "block", width: 22, height: 2, background: C.gold,
             transition: "all 0.3s ease",
-            opacity: menuOpen ? 0 : 1,
-          }} />
-          <span style={{
-            display: "block", width: 22, height: 2, background: C.gold,
-            transition: "all 0.3s ease",
-            transform: menuOpen ? "translateY(-7px) rotate(-45deg)" : "none",
-          }} />
+            transform: menuOpen ? "translateY(-7px) rotate(-45deg)" : "none" }} />
         </button>
       </div>
-
-      {/* Menu tendina mobile */}
       {menuOpen && (
-        <div className="nav-mobile-menu" style={{
-          borderTop: `1px solid ${C.border}`,
+        <div style={{ borderTop: `1px solid ${C.border}`,
           background: "rgba(250,248,244,0.98)",
           padding: "1rem 1.5rem 1.5rem",
-          display: "flex", flexDirection: "column", gap: "0",
-        }}>
+          display: "flex", flexDirection: "column" }}>
           {navLinks.map(({ label, href }) => (
             <a key={href} href={href} onClick={handleLinkClick}
-              style={{
-                fontFamily: "'DM Sans',sans-serif", fontSize: "0.9rem",
+              target={href.startsWith("http") ? "_blank" : "_self"}
+              rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+              style={{ fontFamily: "'DM Sans',sans-serif", fontSize: "0.9rem",
                 color: C.text, textDecoration: "none", letterSpacing: "0.08em",
                 textTransform: "uppercase", fontWeight: 500,
-                padding: "1rem 0",
-                borderBottom: `1px solid ${C.border}`,
-                display: "block",
-              }}>
+                padding: "1rem 0", borderBottom: `1px solid ${C.border}`, display: "block" }}>
               {label}
             </a>
           ))}
-          <a href="mailto:luceacollection@gmail.com"
-            onClick={handleLinkClick}
-            style={{
-              display: "block", textAlign: "center",
-              background: C.gold, color: "#fff",
-              padding: "0.85rem 1rem", marginTop: "1rem",
+          <a href="mailto:luceacollection@gmail.com" onClick={handleLinkClick}
+            style={{ display: "block", textAlign: "center", background: C.gold,
+              color: "#fff", padding: "0.85rem 1rem", marginTop: "1rem",
               fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.12em",
               textTransform: "uppercase", textDecoration: "none",
-              fontFamily: "'DM Sans',sans-serif",
-            }}>
-            Inserisci la tua struttura
+              fontFamily: "'DM Sans',sans-serif" }}>
+            List your property
           </a>
         </div>
       )}
-
       <style>{`
         @media(max-width:768px){
           .nav-desktop { display: none !important; }
@@ -202,7 +174,6 @@ function Nav() {
     </nav>
   );
 }
-
 // ── Hero ──────────────────────────────────────────────────────────────────────
 function Hero({ count }) {
   const [loaded, setLoaded] = useState(false);
