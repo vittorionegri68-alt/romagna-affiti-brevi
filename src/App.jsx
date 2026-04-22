@@ -69,7 +69,6 @@ function Nav() {
     { label: "EN", href: "https://www.romagna-short-stay.com/" },
     { label: "IT", href: "https://www.romagna-affitti-brevi.it/" },
   ];
-  ];
   useEffect(() => {
     const h = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", h);
@@ -223,7 +222,7 @@ function Hero({ count }) {
         <div style={{ opacity: loaded ? 1 : 0, transition: "opacity 0.7s ease 0.5s",
           display: "flex", gap: "2.5rem", flexWrap: "wrap" }}>
           {[
-            [count, "Strutture disponibili"],
+            [count, " disponibili"],
             ["100%", "Verificate"],
             ["Airbnb", "Prenotazione sicura"],
           ].map(([v, l]) => (
@@ -600,12 +599,12 @@ function Footer() {
               letterSpacing: "0.08em", marginBottom: "0.3rem" }}>ROMAGNA AFFITTI BREVI</div>
             <div style={{ fontFamily: "'DM Sans',sans-serif", fontSize: "0.72rem",
               color: "rgba(255,255,255,0.4)", letterSpacing: "0.1em" }}>
-              Directory strutture ricettive · Emilia-Romagna · Italia
+              Directory  ricettive · Emilia-Romagna · Italia
             </div>
           </div>
           <div style={{ display: "flex", gap: "1.5rem", flexWrap: "wrap" }}>
             {[
-              { label: "Strutture", href: "#strutture" },
+              { label: "", href: "#" },
               { label: "Blog", href: "#blog" },
               { label: "FAQ", href: "#faq" },
               { label: "EN", href: "https://www.romagna-short-stay.com/" },
