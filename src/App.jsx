@@ -63,11 +63,12 @@ function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const handleLinkClick = () => setMenuOpen(false);
   const navLinks = [
-    { label: "Properties", href: "#properties" },
+    { label: "Strutture", href: "#strutture" },
     { label: "Blog", href: "#blog" },
     { label: "FAQ", href: "#faq" },
-    { label: "IT", href: "https://www.romagna-affitti-brevi.it/" },
     { label: "EN", href: "https://www.romagna-short-stay.com/" },
+    { label: "IT", href: "https://www.romagna-affitti-brevi.it/" },
+  ];
   ];
   useEffect(() => {
     const h = () => setScrolled(window.scrollY > 40);
