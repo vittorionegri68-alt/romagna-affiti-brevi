@@ -3,11 +3,9 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.romagna-affitti-brevi.it/</loc>
+    <lastmod>2026-04-23</lastmod>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.romagna-affitti-brevi.it/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.romagna-short-stay.com/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.romagna-affitti-brevi.it/"/>
-    <lastmod>2026-04-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
   </url>
 </urlset>
