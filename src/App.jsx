@@ -604,7 +604,6 @@ function Footer() {
           </div>
           <div style={{ display: "flex", gap: "1.5rem", flexWrap: "wrap" }}>
             {[
-              { label: "", href: "#" },
               { label: "Blog", href: "#blog" },
               { label: "FAQ", href: "#faq" },
               { label: "EN", href: "https://www.romagna-short-stay.com/" },
