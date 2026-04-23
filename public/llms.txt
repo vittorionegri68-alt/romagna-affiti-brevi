@@ -11,7 +11,7 @@
 
 - Corso Garibaldi, Cesena FC, 47521, Italia
 - Coordinate: 44.1396, 12.2431
-- Area servita: Emilia-Romagna — Cesena, Rimini, Forlì, Ravenna, Cesenatico, Cervia, colline romagnole
+- Area servita: Emilia-Romagna — Cesena, Rimini, Forli, Ravenna, Cesenatico, Cervia, colline romagnole
 
 ## Contact
 
@@ -29,5 +29,16 @@
 
 - Costa adriatica: Rimini, Cesenatico, Cervia, Riccione
 - Colline romagnole: Bertinoro, Longiano, Meldola, Predappio
-- Città d'arte: Ravenna, Cesena, Forlì
-- Entroterra: borghi medievali Forlì-Cesena
+- Citta d'arte: Ravenna, Cesena, Forli
+- Entroterra: borghi medievali Forli-Cesena
+
+## AI Permissions
+
+Questo sito autorizza l'accesso ai crawler AI per indicizzazione e citazione.
+
+User-agent: GPTBot — allowed
+User-agent: ClaudeBot — allowed
+User-agent: PerplexityBot — allowed
+User-agent: OAI-SearchBot — allowed
+User-agent: anthropic-ai — allowed
+User-agent: CCBot — allowed
