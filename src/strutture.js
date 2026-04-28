@@ -66,7 +66,7 @@ export const strutture = [
       { luogo: "Bologna", tempo: "60 min" },
     ],
     rating: 4.5,
-    recensioni: 24,
+    recensioni: 10,
     prezzo_da: 85,
     url: "https://casa-cavour.vercel.app/",
     airbnb: "https://airbnb.com/h/casacavour-bertinoro",
