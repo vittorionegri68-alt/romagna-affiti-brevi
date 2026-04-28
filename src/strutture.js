@@ -150,7 +150,7 @@ export const strutture = [
   rating: 5,
   recensioni: 2,
   prezzo_da: 105,
-  url: "https://garibaldina-75.vercel.app",      
+  url: "https://garibaldina-75.romagna-affitti-brevi.it",      
   airbnb: "https://www.airbnb.it/rooms/1558562623962692060",
   attivo: true,
 },
