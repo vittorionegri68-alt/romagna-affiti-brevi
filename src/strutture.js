@@ -43,6 +43,7 @@ import casaCavourCover from './assets/Strutture/casa-cavour/cover.jpg'
 import perlacover from './assets/Strutture/perla/cover.jpg'
 import scalinocover from './assets/Strutture/Teatro/cover.jpg'
 import garibaldinacover from './assets/Strutture/garibaldina/cover.jpg'
+import samillacover from './assets/Strutture/samilla/cover.jpg'
 
 export const strutture = [
   {
@@ -154,5 +155,32 @@ export const strutture = [
   airbnb: "https://www.airbnb.it/rooms/1558562623962692060",
   attivo: true,
 },
-
+{
+    id: 'samilla-loft',
+    nome: 'Samilla Loft',
+    cover: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1618206280550914997/original/2916e3d6-8aa4-4503-b605-29f860066e90.jpeg',
+    localita: 'Rimini (RN)',
+    regione: 'Emilia-Romagna',
+    tipologia: 'Appartamento',
+    ospiti: 3,
+    camere: 1,
+    bagni: 1,
+    animali: null,
+    descrizione: 'Loft moderno e luminoso nel cuore di Rimini, a pochi passi dalla spiaggia adriatica. Vista sulla spiaggia, Wi-Fi, aria condizionata e biciclette incluse. Ideale per 2-3 ospiti.',
+    tag: ['Vista mare', 'Biciclette incluse', 'Wi-Fi', 'Aria condizionata', 'Self check-in'],
+    distanze: [
+      { luogo: 'Spiaggia di Rimini', tempo: '2 min a piedi' },
+      { luogo: 'Centro di Rimini', tempo: '10 min a piedi' },
+      { luogo: 'Cesena', tempo: '30 min in auto' },
+      { luogo: 'San Marino', tempo: '35 min in auto' },
+      { luogo: 'Ravenna', tempo: '40 min in auto' },
+      { luogo: 'Bologna', tempo: '80 min in auto' },
+    ],
+    rating: 4.88,
+    recensioni: 0,
+    prezzo_da: null,
+    url: 'https://samilla.romagna-affitti-brevi.it/',
+    airbnb: 'https://www.airbnb.it/rooms/1618206280550914997',
+    attivo: true,
+  },
 ];
