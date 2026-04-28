@@ -158,7 +158,7 @@ export const strutture = [
 {
     id: 'samilla-loft',
     nome: 'Samilla Loft',
-    cover: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1618206280550914997/original/2916e3d6-8aa4-4503-b605-29f860066e90.jpeg',
+    cover: samillacover,
     localita: 'Rimini (RN)',
     regione: 'Emilia-Romagna',
     tipologia: 'Appartamento',
