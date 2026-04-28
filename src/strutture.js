@@ -98,7 +98,7 @@ export const strutture = [
     prezzo_da: 120,
     url: "https://laperla-seven.vercel.app/",
     airbnb: "https://www.airbnb.it/rooms/1310946139319199865",
-    attivo: true,
+    attivo: false,
   },
  {
     id: "Scalino-66",
@@ -124,7 +124,7 @@ export const strutture = [
     prezzo_da: 125,
     url: "https://scalino66.vercel.app/",
     airbnb: "https://www.airbnb.it/rooms/1388960535225462602",
-    attivo: true,
+    attivo: false,
   },
  {
   id: 'garibaldina-75',
