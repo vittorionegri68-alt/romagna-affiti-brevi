@@ -65,7 +65,7 @@ export const strutture = [
       { luogo: "Rimini", tempo: "40 min" },
       { luogo: "Bologna", tempo: "60 min" },
     ],
-    rating: 5.0,
+    rating: 4.5,
     recensioni: 24,
     prezzo_da: 85,
     url: "https://casa-cavour.vercel.app/",
