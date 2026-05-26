@@ -389,12 +389,22 @@ function FilterBar({ filter, setFilter }) {
 // ── Blog Section ──────────────────────────────────────────────────────────────
 function BlogSection() {
   const [selected, setSelected] = useState(null);
+  const sectionRef = useRef(null);
   const pubblicati = posts.filter(p => p.attivo);
+
+  function chiudi() {
+    setSelected(null);
+    setTimeout(() => {
+      if (sectionRef.current) {
+        sectionRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 50);
+  }
 
   if (pubblicati.length === 0) return null;
 
   return (
-    <section id="blog" style={{ background: C.bg2, padding: "5rem 2rem" }}>
+    <section ref={sectionRef} id="blog" style={{ background: C.bg2, padding: "5rem 2rem" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <Reveal>
           <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "0.75rem" }}>
@@ -414,7 +424,7 @@ function BlogSection() {
 
         {selected ? (
           <div style={{ maxWidth: 720, margin: "0 auto" }}>
-            <button onClick={() => setSelected(null)}
+            <button onClick={chiudi}
               style={{ background: "transparent", border: "none", color: C.gold,
                 fontFamily: "'DM Sans',sans-serif", fontSize: "0.8rem",
                 letterSpacing: "0.08em", textTransform: "uppercase",
@@ -457,7 +467,7 @@ function BlogSection() {
             <div style={{ marginTop: "3rem", paddingTop: "2rem",
               borderTop: `1px solid ${C.border}`,
               display: "flex", justifyContent: "center" }}>
-              <button onClick={() => setSelected(null)}
+              <button onClick={chiudi}
                 style={{ background: "transparent", border: `1px solid ${C.gold}`,
                   color: C.gold, fontFamily: "'DM Sans',sans-serif",
                   fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.12em",
