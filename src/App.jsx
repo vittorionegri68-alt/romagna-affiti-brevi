@@ -454,6 +454,20 @@ function BlogSection() {
               );
               return null;
             })}
+            <div style={{ marginTop: "3rem", paddingTop: "2rem",
+              borderTop: `1px solid ${C.border}`,
+              display: "flex", justifyContent: "center" }}>
+              <button onClick={() => setSelected(null)}
+                style={{ background: "transparent", border: `1px solid ${C.gold}`,
+                  color: C.gold, fontFamily: "'DM Sans',sans-serif",
+                  fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.12em",
+                  textTransform: "uppercase", cursor: "pointer",
+                  padding: "0.65rem 2rem", transition: "all 0.2s" }}
+                onMouseEnter={e => { e.currentTarget.style.background = C.gold; e.currentTarget.style.color = "#fff"; }}
+                onMouseLeave={e => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = C.gold; }}>
+                ← Torna agli articoli
+              </button>
+            </div>
           </div>
         ) : (
           <div style={{ display: "grid",
