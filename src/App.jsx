@@ -67,6 +67,7 @@ function Nav() {
     { label: "Strutture", href: "#strutture" },
     { label: "Blog", href: "#blog" },
     { label: "FAQ", href: "#faq" },
+    { label: "Chi Siamo", href: "/chi-siamo.html" },
     { label: "EN", href: "https://www.romagna-short-stay.com/" },
     { label: "IT", href: "https://www.romagna-affitti-brevi.it/" },
   ];
