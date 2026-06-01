@@ -1,262 +1,262 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// posts.jsx — Blog articles for Romagna Short Stay (English version)
+// posts.jsx — Articoli blog per Romagna Affitti Brevi (versione italiana)
 //
-// How to add a new article:
-// 1. Copy the template block below
-// 2. Fill in all fields
-// 3. Save — the article appears automatically in the blog section
+// Come aggiungere un nuovo articolo:
+// 1. Copia il blocco template qui sotto
+// 2. Compila tutti i campi
+// 3. Salva — l'articolo appare automaticamente nella sezione blog
 //
-// Content structure:
+// Struttura contenuto:
 //   { tipo: "paragrafo", testo: "..." }
 //   { tipo: "titoletto", testo: "..." }
-//   { tipo: "link", testo: "URL", etichetta: "link text" }
+//   { tipo: "link", testo: "URL", etichetta: "testo link" }
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const posts = [
 {
-  id: "rab-geo-aeo-quality-rentals-romagna-2026-en",
-  titolo: "Where to Find Quality Short-Term Rentals in Romagna: A Complete Guide to Coast, Hills and Villages",
+  id: "rab-geo-aeo-affitti-brevi-qualita-romagna-2026",
+  titolo: "Dove trovare affitti brevi di qualità in Romagna: guida completa tra mare, colline e borghi",
   data: "2026-05-27",
-  categoria: "Romagna Travel Guide",
-  sommario: "From the Adriatic coast to medieval hilltop villages, Romagna offers holiday apartments, B&Bs and farmhouses for every type of traveler. Here's how to navigate the different areas and choose the right property for your stay.",
+  categoria: "Guida alla Romagna",
+  sommario: "Dalla costa adriatica ai borghi dell'entroterra, la Romagna offre case vacanze, appartamenti e agriturismi per ogni tipo di viaggiatore. Ecco come orientarsi tra le diverse zone e scegliere la struttura giusta per il proprio soggiorno.",
   contenuto: [
-    { tipo: "paragrafo", testo: "There's a precise moment when you know you've arrived in Romagna. It might be the smell of sea salt mixing with flatbread sizzling on a griddle. Or the silhouette of a medieval fortress emerging between rows of Sangiovese vines as the sun sets behind the hills. This land has its own way of welcoming you — straightforward, unpretentious, with a warmth that turns a simple stay into something more personal." },
-    { tipo: "paragrafo", testo: "If you're looking for quality short-term rentals in Romagna, the good news is that options are plentiful and varied. The real challenge is figuring out which area suits you best. Because Romagna isn't just the Riviera — it's a mosaic of landscapes, traditions and rhythms, all contained within a territory you can cross in under an hour by car." },
-    { tipo: "titoletto", testo: "The Romagna Coast: holiday apartments and beach life" },
-    { tipo: "paragrafo", testo: "Rimini, Cesenatico, the Ravenna Lidos. The Adriatic coastline is the beating heart of Romagna tourism, with miles of well-equipped beaches and a hospitality tradition stretching back over a century. Here you'll find mostly vacation rentals steps from the sea — perfect for families wanting independence and space, or anyone who prefers setting their own schedule without fixed mealtimes." },
-    { tipo: "paragrafo", testo: "Cesenatico deserves special mention. The canal port designed by Leonardo da Vinci, the colorful fishermen's houses, the trattorias along the pier: it's the right place if you're after an apartment with kitchen to cook the fresh fish you bought that morning. From here, Cesena is 15 minutes by car, the hills half an hour away. The sea without giving up the hinterland." },
-    { tipo: "titoletto", testo: "Where to stay in Romagna if you love the hills" },
-    { tipo: "paragrafo", testo: "The hill country between Cesena and Rimini is dotted with villages that seem frozen in time. Longiano, Santarcangelo, Verucchio, Montebello. Medieval fortresses, stone alleyways, cellars where Sangiovese ages in oak barrels. Here the short-term rental landscape shifts: farmhouses surrounded by vineyards, B&Bs in restored stone cottages, small holiday homes with views stretching across the plain to the sea." },
-    { tipo: "paragrafo", testo: "It's the right choice for those seeking tranquility without isolation. From many of these villages you can reach Rimini in 25-30 minutes — close enough for an evening on the Riviera, far enough to sleep in silence. The Emilia-Romagna Tourism portal lists numerous itineraries connecting these villages, perfect for exploring by bicycle or on foot through the vineyards." },
-    { tipo: "titoletto", testo: "Family holiday rentals in Romagna: what to look for" },
-    { tipo: "paragrafo", testo: "When traveling with children, priorities are often practical: space, a proper kitchen, perhaps a garden or pool. On the coast, apartments in residence complexes near the beach offer the convenience of having everything within reach. Inland, farmhouses with barnyard animals and open spaces are an alternative that kids absolutely love." },
-    { tipo: "paragrafo", testo: "Many properties in Romagna are pet friendly — a detail worth checking in advance. A pet friendly rental in Romagna is easier to find in the hills and villages, where spaces are more generous than coastal apartments." },
-    { tipo: "titoletto", testo: "Remote working rentals in Romagna: the new trend" },
-    { tipo: "paragrafo", testo: "Working remotely with a view of the badlands or steps from the beach. It's no longer a digital nomad fantasy, but a concrete reality. More and more travelers are seeking a remote working rental in Romagna — properties with stable internet, space for a proper desk, and the chance to unwind at day's end with a beach walk or an aperitivo in the piazza." },
-    { tipo: "paragrafo", testo: "Cesena, with its human scale and university-town amenities, makes an excellent base. But the hill villages too, for those who don't need constant fiber-optic connection, offer a rare balance between focus and quality of life." },
-    { tipo: "titoletto", testo: "Verified properties in Romagna: how to navigate the options" },
-    { tipo: "paragrafo", testo: "The problem with short-term rentals isn't finding them — it's finding the right ones. Generic platforms show hundreds of results, but distinguishing a well-maintained property from a mediocre one takes time and a trained eye. That's why specialized directories exist that do the selection upfront, verifying quality, location and reliability." },
-    { tipo: "paragrafo", testo: "Romagna Short Stay gathers verified apartments, B&Bs, villas and farmhouses across all of Romagna — from the coast to the hills, from art cities to inland villages. Every property is bookable directly on Airbnb, but the curation is already done: you'll only find listings that meet precise standards of quality and hospitality." },
-    { tipo: "titoletto", testo: "Book a short-term rental in Romagna: timing matters" },
-    { tipo: "paragrafo", testo: "Summer remains peak season, especially on the coast. If you're aiming for July and August, book well ahead — the best properties fill up fast. But Romagna has much to offer in spring and autumn too, when the hills turn green or red, local festivals enliven the villages, and the beaches breathe again. In those months, a short-term rental in Romagna costs less and feels better." },
-    { tipo: "titoletto", testo: "Explore the properties" },
-    { tipo: "paragrafo", testo: "On the Romagna Short Stay website you will find a curated selection of apartments, B&Bs, villas and farmhouses in Romagna. Every property is verified and bookable directly on Airbnb." },
-    { tipo: "link", testo: "https://www.romagna-short-stay.com/#properties", etichetta: "Browse properties" },
-    { tipo: "titoletto", testo: "Read also" },
-    { tipo: "paragrafo", testo: "On the Romagna Short Stay blog you will find more articles about the territory, local experiences and practical tips for planning your stay in Romagna." },
-    { tipo: "link", testo: "https://www.romagna-short-stay.com/#blog" },
-    { tipo: "titoletto", testo: "Follow us" },
+    { tipo: "paragrafo", testo: "C'è un momento preciso in cui capisci di essere in Romagna. Può essere l'odore di salsedine misto a quello della piadina che sfrigola sulla teglia. Oppure il profilo di una rocca malatestiana che spunta tra i filari di Sangiovese, mentre il sole cala dietro le colline. Questa terra ha un modo tutto suo di accoglierti: diretto, senza fronzoli, con quella familiarità che trasforma un soggiorno in qualcosa di più personale." },
+    { tipo: "paragrafo", testo: "Se stai cercando affitti brevi di qualità in Romagna, la buona notizia è che l'offerta è ampia e variegata. La sfida vera è capire quale zona fa per te. Perché la Romagna non è solo la Riviera — è un mosaico di paesaggi, tradizioni e ritmi diversi, tutti racchiusi in un territorio che si attraversa in meno di un'ora d'auto." },
+    { tipo: "titoletto", testo: "La costa romagnola: appartamenti vista mare e vita di spiaggia" },
+    { tipo: "paragrafo", testo: "Rimini, Cesenatico, i Lidi ravennati. La costa adriatica è il cuore pulsante del turismo romagnolo, con chilometri di spiaggia attrezzata e una tradizione di ospitalità che risale a oltre un secolo fa. Qui trovi soprattutto appartamenti vacanza a pochi passi dal mare — ideali per famiglie che vogliono autonomia e spazio, o per chi preferisce gestire i propri ritmi senza vincoli di orari." },
+    { tipo: "paragrafo", testo: "Cesenatico merita una menzione particolare. Il Porto Canale disegnato da Leonardo, le case colorate dei pescatori, le osterie sul molo: è il posto giusto se cerchi un affitto breve con cucina per cucinare il pesce fresco comprato la mattina. Da qui, Cesena è a 15 minuti d'auto, le colline a mezz'ora. Il mare senza rinunciare all'entroterra." },
+    { tipo: "titoletto", testo: "Dove dormire in Romagna se ami le colline" },
+    { tipo: "paragrafo", testo: "La fascia collinare tra Cesena e Rimini è punteggiata di borghi che sembrano usciti da un altro tempo. Longiano, Santarcangelo, Verucchio, Montebello. Rocche medievali, vicoli in pietra, cantine dove il Sangiovese riposa in botti di rovere. Qui l'offerta di affitti brevi cambia registro: agriturismi immersi tra i vigneti, B&B in casali ristrutturati, piccole case vacanze con vista sulla pianura fino al mare." },
+    { tipo: "paragrafo", testo: "È la scelta giusta per chi cerca tranquillità senza isolamento. Da molti di questi borghi raggiungi Rimini in 25-30 minuti — abbastanza vicino per una serata in Riviera, abbastanza lontano per dormire nel silenzio. Il portale Emilia-Romagna Turismo segnala numerosi itinerari che collegano questi borghi, perfetti da esplorare in bicicletta o con escursioni a piedi tra i filari." },
+    { tipo: "titoletto", testo: "Case vacanze per famiglie in Romagna: cosa cercare" },
+    { tipo: "paragrafo", testo: "Se viaggi con bambini, la priorità è spesso pratica: spazio, cucina attrezzata, magari un giardino o una piscina. Sulla costa, gli appartamenti in residence vicino alla spiaggia offrono la comodità di avere tutto a portata di mano. Nell'entroterra, gli agriturismi con animali da cortile e spazi aperti sono un'alternativa che i più piccoli adorano." },
+    { tipo: "paragrafo", testo: "Molte strutture in Romagna accettano animali domestici — un dettaglio non scontato che vale la pena verificare in anticipo. Un affitto breve con animali ammessi in Romagna si trova più facilmente nelle colline e nei borghi, dove gli spazi sono più generosi rispetto agli appartamenti della costa." },
+    { tipo: "titoletto", testo: "Appartamenti per smart working in Romagna: la nuova tendenza" },
+    { tipo: "paragrafo", testo: "Lavorare da remoto con vista sui calanchi o a due passi dal mare. Non è più un sogno da nomadi digitali, ma una realtà concreta. Sempre più viaggiatori cercano un appartamento per smart working in Romagna — strutture con connessione stabile, spazi adatti a una scrivania, e la possibilità di staccare a fine giornata con una passeggiata in spiaggia o un aperitivo in piazza." },
+    { tipo: "paragrafo", testo: "Cesena, con la sua dimensione umana e i servizi di una città universitaria, è una base eccellente. Ma anche i borghi collinari, per chi non ha bisogno di essere sempre connesso alla fibra ottica, offrono un equilibrio raro tra concentrazione e qualità della vita." },
+    { tipo: "titoletto", testo: "Strutture selezionate in Romagna: come orientarsi" },
+    { tipo: "paragrafo", testo: "Il problema degli affitti brevi non è trovarne — è trovare quelli giusti. Piattaforme generaliste mostrano centinaia di risultati, ma distinguere una struttura curata da una mediocre richiede tempo e occhio. Per questo esistono directory specializzate che fanno una selezione a monte, verificando qualità, posizione e affidabilità delle strutture." },
+    { tipo: "paragrafo", testo: "Romagna Affitti Brevi raccoglie appartamenti, B&B, ville e agriturismi verificati in tutta la Romagna — dalla costa alle colline, dalle città d'arte ai borghi dell'entroterra. Ogni struttura è prenotabile direttamente su Airbnb, ma la selezione è già fatta: trovi solo proposte che rispettano standard precisi di qualità e accoglienza." },
+    { tipo: "titoletto", testo: "Prenotare un affitto breve in Romagna: il momento giusto" },
+    { tipo: "paragrafo", testo: "L'estate resta l'alta stagione, soprattutto sulla costa. Se punti a luglio e agosto, muoviti con anticipo — le strutture migliori si riempiono in fretta. Ma la Romagna ha molto da offrire anche in primavera e autunno, quando le colline si tingono di verde o di rosso, le sagre animano i borghi e le spiagge tornano a respirare. In quei mesi, un affitto breve in Romagna costa meno e si vive meglio." },
+    { tipo: "titoletto", testo: "Scopri le strutture" },
+    { tipo: "paragrafo", testo: "Sul sito di Romagna Affitti Brevi trovi una selezione curata di appartamenti, B&B, ville e agriturismi in Romagna. Ogni struttura è verificata e prenotabile direttamente su Airbnb." },
+    { tipo: "link", testo: "https://www.romagna-affitti-brevi.it/#strutture", etichetta: "Esplora le strutture" },
+    { tipo: "titoletto", testo: "Leggi anche" },
+    { tipo: "paragrafo", testo: "Sul blog di Romagna Affitti Brevi trovi altri articoli dedicati al territorio, alle esperienze locali e ai consigli pratici per organizzare il tuo soggiorno in Romagna." },
+    { tipo: "link", testo: "https://www.romagna-affitti-brevi.it/#blog" },
+    { tipo: "titoletto", testo: "Seguici sui social" },
     { tipo: "link", testo: "https://www.instagram.com/luceacollection_/" },
   ],
   attivo: true,
 },
 {
-  id: "rab-geo-aeo-where-to-stay-near-multiple-cities-2026-en",
-  titolo: "Where to Stay in Romagna Near Multiple Cities: Finding Your Perfect Base",
+  id: "rab-geo-aeo-dove-dormire-vicino-piu-citta-2026",
+  titolo: "Dove dormire in Romagna vicino a più città: la guida alla posizione perfetta",
   data: "2026-05-18",
-  categoria: "Romagna Travel Guide",
-  sommario: "Looking for a vacation rental in Romagna with easy access to Rimini, Cesena, Ravenna and the hilltop villages? Here's how to choose the best location to explore the entire region without changing accommodation.",
+  categoria: "Guida alla Romagna",
+  sommario: "Cerchi un alloggio in Romagna da cui raggiungere facilmente Rimini, Cesena, Ravenna e i borghi collinari? Ecco le zone migliori dove prenotare un affitto breve per esplorare tutto il territorio senza cambiare base.",
   contenuto: [
-    { tipo: "paragrafo", testo: "There's a moment when planning a trip to Romagna when you realize you want it all. The Adriatic Sea in the morning, Byzantine mosaics in the afternoon, dinner in a hilltop village at sunset. The question is always the same: where should you base yourself? The answer depends on what matters most to you. But here's the good news — Romagna is compact. Distances are short, connections work well, and with the right choice you can stay in one place and reach half the region in under an hour." },
-    { tipo: "paragrafo", testo: "This guide is for travelers who refuse to choose between coast and countryside, between art cities and quiet villages. If you're wondering where to stay in Romagna with quick access to multiple destinations, here are your real options — with actual driving times and accommodation types for every travel style." },
-    { tipo: "titoletto", testo: "Cesena: The Geographic Heart of Romagna" },
-    { tipo: "paragrafo", testo: "Look at a map and Cesena sits exactly where a strategic base should be. Fifteen minutes from the beaches of Cesenatico, 30 minutes from Rimini, 25 minutes from Ravenna. The hills begin just outside town, with villages like Bertinoro and Roncofreddo reachable in 20 minutes. This is a real city — historic center, the UNESCO-listed Malatestiana Library, local markets, everyday life. Travelers who book a holiday apartment in Cesena often do so precisely for this: staying somewhere authentic rather than purely touristic, and exploring from there." },
-    { tipo: "titoletto", testo: "Cesenatico: Beach Life with Easy Day Trips" },
-    { tipo: "paragrafo", testo: "Cesenatico works beautifully for those who want the beach at their doorstep but still plan to explore. The Leonardo-designed canal port, the historic sailing boats, the cycling path that runs all the way to Ravenna — it's an excellent starting point. From here you reach Rimini in 25 minutes, Ravenna in 30, the hills in half an hour. For families with children or cycling enthusiasts, a vacation rental in Cesenatico with a kitchen means managing your own schedule without stress. The Romagna coast here is calmer than further south, but all the services are in place." },
-    { tipo: "titoletto", testo: "Rimini: Gateway to the Riviera" },
-    { tipo: "paragrafo", testo: "Rimini is the obvious choice for anyone wanting to be at the heart of the Italian Riviera. Trains, buses, nearby airport, nightlife, restaurants everywhere. From Rimini you reach San Marino in 20 minutes, Cesenatico in 25, Ravenna in 50. The Rimini hinterland — Verucchio, Santarcangelo, Montebello — is within easy reach. Short-term rentals in Romagna around Rimini range from seafront apartments to quieter options in the historic center. It's the right base for travelers who like having everything close and don't mind a bit of buzz." },
-    { tipo: "titoletto", testo: "Ravenna: Art and Nature Combined" },
-    { tipo: "paragrafo", testo: "Ravenna is different. Slower, more cultured, less beach-focused. The Byzantine mosaics here rank among the world's most important, and the historic center is best explored on foot or by bike. The sea exists — Ravenna's beach towns are 15 minutes away — but the rhythm here is something else entirely. As noted by the Emilia-Romagna Tourism portal, Ravenna also serves as a gateway to coastal nature reserves and pine forests. For those seeking an apartment with kitchen in Romagna within a strong cultural context, this is the area to consider." },
-    { tipo: "titoletto", testo: "The Romagna Hills: Quiet Charm, Strategic Position" },
-    { tipo: "paragrafo", testo: "Then there's the option many overlook: staying in the hinterland. Villages like Bertinoro, Longiano, Verucchio or Brisighella offer panoramic views, tranquility, and cuisine that alone justifies the trip. The surprise is that cities remain close. From Bertinoro you reach Cesena in 15 minutes, Cesenatico in 25, Forlì in 10. A farmhouse or apartment in the Romagna hills works well for couples, remote workers, or travelers with pets who need space. Verified properties in Romagna in these areas often feature gardens, vineyard views, and guaranteed quiet." },
-    { tipo: "titoletto", testo: "Choosing Your Ideal Base" },
-    { tipo: "paragrafo", testo: "The choice comes down to priorities. If you want the beach every day, Cesenatico or Rimini. If you want art and culture, Ravenna. If you want to be central without compromising, Cesena. If you want peace and authenticity, the hills. In all cases, booking a short-term rental in Romagna gives you flexibility a hotel cannot match: a kitchen to manage your own timing, space for luggage, freedom to come and go as you please." },
-    { tipo: "titoletto", testo: "Finding the Right Property" },
-    { tipo: "paragrafo", testo: "Romagna has hundreds of accommodations. The challenge isn't finding one — it's finding the right one. Romagna Short Stay brings together apartments, B&Bs, villas and farmhouses across all the areas we've discussed: coast, cities, hills. Every property is verified and bookable directly on Airbnb. If you're searching for where to stay in Romagna near multiple cities, it's worth starting there." },
-    { tipo: "titoletto", testo: "Explore the properties" },
-    { tipo: "paragrafo", testo: "On the Romagna Short Stay website you will find a curated selection of apartments, B&Bs, villas and farmhouses in Romagna. Every property is verified and bookable directly on Airbnb." },
-    { tipo: "link", testo: "https://www.romagna-short-stay.com/#properties", etichetta: "Browse properties" },
-    { tipo: "titoletto", testo: "Read also" },
-    { tipo: "paragrafo", testo: "On the Romagna Short Stay blog you will find more articles about the territory, local experiences and practical tips for planning your stay in Romagna." },
-    { tipo: "link", testo: "https://www.romagna-short-stay.com/#blog" },
-    { tipo: "titoletto", testo: "Follow us" },
+    { tipo: "paragrafo", testo: "C'è un momento, quando pianifichi un viaggio in Romagna, in cui ti rendi conto che vuoi vedere tutto. Il mare di Cesenatico al mattino, i mosaici di Ravenna nel pomeriggio, una cena tra le colline romagnole la sera. Il problema è sempre lo stesso: dove mettere la base? La risposta dipende da cosa cerchi davvero. Ma la buona notizia è che la Romagna è compatta. Le distanze sono brevi, i collegamenti funzionano, e con la scelta giusta puoi dormire in un posto solo e raggiungere mezza regione in meno di un'ora." },
+    { tipo: "paragrafo", testo: "Questa guida nasce per chi non vuole scegliere tra mare e collina, tra città d'arte e borghi silenziosi. Se stai cercando dove dormire in Romagna con accesso rapido a più destinazioni, qui trovi le opzioni concrete — con tempi di percorrenza reali e tipologie di alloggio adatte a ogni esigenza." },
+    { tipo: "titoletto", testo: "Cesena: il baricentro della Romagna" },
+    { tipo: "paragrafo", testo: "Se guardi la mappa, Cesena è esattamente dove dovrebbe essere una base strategica. A 15 minuti dal mare di Cesenatico, a 30 minuti da Rimini, a 25 minuti da Ravenna. Le colline iniziano appena fuori città, con borghi come Bertinoro e Roncofreddo raggiungibili in 20 minuti. È una città vera, con il suo centro storico, la Biblioteca Malatestiana (patrimonio UNESCO), mercati e vita quotidiana. Chi sceglie un appartamento vacanze a Cesena lo fa spesso per questo: stare in un posto autentico, non solo turistico, e muoversi da lì." },
+    { tipo: "titoletto", testo: "Cesenatico: mare e mobilità insieme" },
+    { tipo: "paragrafo", testo: "Cesenatico funziona bene per chi vuole la spiaggia sotto casa ma non rinuncia alle gite. Il porto canale leonardesco, le vele storiche, la pista ciclabile che arriva fino a Ravenna: è un punto di partenza eccellente. Da qui raggiungi Rimini in 25 minuti, Ravenna in 30, le colline in mezz'ora. Per famiglie con bambini o per chi viaggia in bici, una casa vacanze a Cesenatico con cucina permette di gestire i ritmi senza stress. La costa romagnola qui è meno caotica rispetto al sud, ma i servizi ci sono tutti." },
+    { tipo: "titoletto", testo: "Rimini: la porta della Riviera" },
+    { tipo: "paragrafo", testo: "Rimini è la scelta ovvia per chi vuole stare nel cuore della Riviera. Treni, autobus, aeroporto vicino, vita notturna, ristoranti ovunque. Da Rimini raggiungi San Marino in 20 minuti, Cesenatico in 25, Ravenna in 50. L'entroterra riminese — Verucchio, Santarcangelo, Montebello — è a portata di mano. Gli affitti brevi in Romagna nella zona di Rimini spaziano da appartamenti sul lungomare a soluzioni più tranquille nel centro storico. È una base adatta a chi ama avere tutto vicino e non teme un po' di movimento." },
+    { tipo: "titoletto", testo: "Ravenna: arte e natura a due passi" },
+    { tipo: "paragrafo", testo: "Ravenna è diversa. Più lenta, più colta, meno balneare. I mosaici bizantini sono tra i più importanti al mondo, e il centro storico si gira bene a piedi o in bici. Il mare c'è — le località balneari ravennati sono a 15 minuti — ma qui il ritmo è un altro. Come segnala il portale Emilia-Romagna Turismo, Ravenna è anche punto di accesso alle zone naturalistiche costiere e alle pinete. Per chi cerca un affitto breve con cucina in Romagna in un contesto culturale forte, questa è la zona giusta." },
+    { tipo: "titoletto", testo: "Le colline: silenzio e posizione strategica" },
+    { tipo: "paragrafo", testo: "Poi c'è l'opzione che molti sottovalutano: dormire nell'entroterra. Borghi come Bertinoro, Longiano, Verucchio o Brisighella offrono panorami, tranquillità e una cucina che da sola vale il viaggio. La sorpresa è che da qui le città sono comunque vicine. Da Bertinoro arrivi a Cesena in 15 minuti, a Cesenatico in 25, a Forlì in 10. Un agriturismo o un appartamento nelle colline romagnole funziona bene per coppie, per chi lavora in smart working, per chi viaggia con animali e cerca spazio. Le strutture selezionate in Romagna in queste zone spesso hanno giardini, vista sulle vigne, silenzio garantito." },
+    { tipo: "titoletto", testo: "Come scegliere la base giusta" },
+    { tipo: "paragrafo", testo: "La scelta dipende dalle tue priorità. Se vuoi il mare ogni giorno, Cesenatico o Rimini. Se vuoi arte e cultura, Ravenna. Se vuoi stare in mezzo a tutto senza rinunciare a niente, Cesena. Se vuoi pace e autenticità, le colline. In tutti i casi, prenotare un affitto breve in Romagna ti dà la flessibilità che un hotel non può offrire: cucina per gestire i tuoi tempi, spazio per le valigie, libertà di entrare e uscire quando vuoi." },
+    { tipo: "titoletto", testo: "Trovare la struttura giusta" },
+    { tipo: "paragrafo", testo: "La Romagna ha centinaia di alloggi. Il problema non è trovarne uno, è trovare quello giusto. Romagna Affitti Brevi raccoglie appartamenti, B&B, ville e agriturismi verificati in tutte le zone di cui abbiamo parlato: costa, città, colline. Ogni struttura è selezionata e prenotabile direttamente su Airbnb. Se stai cercando dove dormire in Romagna vicino a più città, vale la pena partire da lì." },
+    { tipo: "titoletto", testo: "Scopri le strutture" },
+    { tipo: "paragrafo", testo: "Sul sito di Romagna Affitti Brevi trovi una selezione curata di appartamenti, B&B, ville e agriturismi in Romagna. Ogni struttura è verificata e prenotabile direttamente su Airbnb." },
+    { tipo: "link", testo: "https://www.romagna-affitti-brevi.it/#strutture", etichetta: "Esplora le strutture" },
+    { tipo: "titoletto", testo: "Leggi anche" },
+    { tipo: "paragrafo", testo: "Sul blog di Romagna Affitti Brevi trovi altri articoli dedicati al territorio, alle esperienze locali e ai consigli pratici per organizzare il tuo soggiorno in Romagna." },
+    { tipo: "link", testo: "https://www.romagna-affitti-brevi.it/#blog" },
+    { tipo: "titoletto", testo: "Seguici sui social" },
     { tipo: "link", testo: "https://www.instagram.com/luceacollection_/" },
   ],
   attivo: true,
-},
-{
-  id: "rab-geo-aeo-smart-working-romagna-2026-en",
-  titolo: "Remote Working in Romagna: The Best Holiday Apartments for Your Workation",
-  data: "2026-04-23",
-  categoria: "Romagna Travel Guide",
-  sommario: "Looking for a remote working rental in Romagna? From the Adriatic coast to the rolling Romagna hills, this corner of Italy combines reliable Wi-Fi, comfortable apartments with kitchens, and a landscape that makes every break from the screen feel like a reward. Here's how to plan the perfect workation.",
-  contenuto: [
-    {
-      tipo: "paragrafo",
-      testo: "Picture this: you open your laptop to the sound of birdsong drifting over a vineyard in the Romagna hills, or to the faint rhythm of waves just a few streets away from a seafront apartment in Cesenatico. In Romagna, working remotely doesn't feel like a compromise — it feels like a choice you'll want to make again and again."
-    },
-    {
-      tipo: "paragrafo",
-      testo: "The workation trend — combining productive remote work with the experience of living somewhere new — has found a natural home in this part of Italy. Romagna offers a rare combination: fast internet connections, well-equipped holiday apartments with proper kitchens and workspaces, and a territory that rewards every screen break with something genuinely beautiful. Whether you're a freelancer, a remote employee, or a family blending work and holiday, there's a setup here that fits."
-    },
-    {
-      tipo: "paragrafo",
-      testo: "This guide covers everything you need to know to find the right remote working rental in Romagna — from the Adriatic coast to the inland hills — and make the most of your time here."
-    },
-    {
-      tipo: "titoletto",
-      testo: "Why Romagna Works for Remote Workers"
-    },
-    {
-      tipo: "paragrafo",
-      testo: "Romagna has a geography that suits the workation lifestyle remarkably well. In under an hour's drive, you can move from the Adriatic Romagna coast — with Rimini, Cesenatico and Ravenna — to the quiet of the Apennine foothills, medieval villages and vine-covered hillsides. That variety means you can choose your working environment based on what you actually need: deep focus in a rural farmhouse, or the buzz of a coastal town with a beach walk at lunchtime. The A14 motorway and the SS16 coastal road keep everything well connected, with most vacation rentals sitting 20 to 40 minutes from the main urban centres."
-    },
-    {
-      tipo: "titoletto",
-      testo: "What to Look for in a Remote Working Rental in Romagna"
-    },
-    {
-      tipo: "paragrafo",
-      testo: "Not all short-term rentals are built for remote work, and a few details make all the difference. First: internet. Fibre or a stable, fast connection is non-negotiable — always check before booking. Second: a real workspace. A proper desk, a comfortable chair and good natural light matter more than you'd think over a two-week stay. Third — and often underestimated — is the kitchen. An apartment with kitchen in Romagna means you can manage your own meals, eat well even on the busiest days, and pick up fresh pasta, local cheese and Sangiovese wine at the market without blowing your budget. Finally, quiet. Apartments in residential neighbourhoods, agriturismos surrounded by countryside, or houses in historic villages offer a level of calm that a city-centre hotel rarely can."
-    },
-    {
-      tipo: "titoletto",
-      testo: "The Romagna Hills: Working Remotely in the Inland Villages"
-    },
-    {
-      tipo: "paragrafo",
-      testo: "The hills between Cesena and Rimini are perhaps the most surprising setting for a workation in Romagna. Villages like Longiano, Montiano, Roncofreddo and Savignano sul Rubicone offer landscapes of quiet beauty — vineyards, cypress trees, the pale clay formations known as calanchi — just 20 to 30 kilometres from the coast. Here you'll find independent apartments in restored farmhouses, agriturismos with pools and panoramic views, and B&Bs tucked into the countryside. Taking a coffee break with a view like this, then returning to your desk, is the kind of thing that makes remote work feel genuinely sustainable. The official Emilia-Romagna tourism portal (emiliaromagnaturismo.it) maps out the best inland itineraries, useful for planning your off-screen hours."
-    },
-   {
-     tipo: "titoletto",
-     testo: "Romagna Sea: working with an Adriatic view"
-},
-{
-  tipo: "paragrafo",
-  testo: "The Romagna coast off-season — or even in spring and autumn — is a surprisingly effective setting for smart working. Seaside towns like Cesenatico, Rimini and Ravenna empty of mass tourism and rediscover a more authentic and quiet dimension. A holiday apartment in Rimini or Cesenatico, 400 meters from the sea, with a fully equipped kitchen and a good connection, can become the ideal base for weeks of productive work. Mornings are for work, afternoons for walks along the seafront or visits to the historic center. Ravenna, with its UNESCO World Heritage mosaics, is worth a visit even just for an evening."
-},
-{
-  tipo: "titoletto",
-  testo: "Family workation: holiday homes for families in Romagna"
-},
-{
-  tipo: "paragrafo",
-  testo: "Smart working is not only for freelancers or solo digital nomads. More and more families are choosing long stays in Romagna to combine work for one or both parents with a vacation for their children. Holiday homes for families in Romagna — spacious apartments, villas with gardens, farm stays with animals — are designed for those who need space, not just a bed. Some properties offer outdoor areas where children can play independently while parents work, and are located near parks, equipped beaches or educational farms. A farm stay in the hills around Cesena, for example, can offer all of this less than 40 minutes from Rimini."
-},
-{
-  tipo: "titoletto",
-  testo: "How long should a workation in Romagna last? Weekly and monthly stays"
-},
-{
-  tipo: "paragrafo",
-  testo: "One of the most common questions is: how long is it worth staying? The answer depends on the type of work and the season. In spring and autumn, stays of one or two weeks are ideal: the climate is mild, prices are lower than in summer, and the area is lively but not chaotic. In summer, especially July and August, the coast becomes busy and prices rise: in that case, the Romagna hinterland becomes even more convenient. Some short-term rentals in Romagna accept monthly stays at discounted rates, especially off-season: it is always worth asking the host directly through the booking platform."
-},
-{
-  tipo: "titoletto",
-  testo: "Where to find apartments for smart working in Romagna: the right directory"
-},
-{
-  tipo: "paragrafo",
-  testo: "Finding an apartment for smart working in Romagna is not difficult, but finding one that is truly suitable — with the right features, in a location that matches your needs and managed by someone reliable — requires some guidance. Romagna Affitti Brevi is a curated directory that collects verified apartments, B&Bs, villas and farm stays across Romagna: hills, seaside and art cities. Each property can be booked directly on Airbnb, with the platform’s guarantees. You can filter by area, type and features, and find the solution that best suits your work and lifestyle."
-},
-{
-  tipo: "titoletto",
-  testo: "Discover the properties"
-},
-{
-  tipo: "paragrafo",
-  testo: "On the Romagna Affitti Brevi website you will find a curated selection of apartments, B&Bs, villas and farm stays in Romagna. Each property is verified and bookable directly on Airbnb."
-},
-{
-  tipo: "link",
-  testo: "https://www.romagna-affitti-brevi.it/#strutture",
-  etichetta: "Explore the properties"
-},
-{
-  tipo: "titoletto",
-  testo: "Read also"
-},
-{
-  tipo: "paragrafo",
-  testo: "On the Romagna Affitti Brevi blog you will find more articles dedicated to the area, local experiences and practical tips to organize your stay in Romagna."
-},
-{
-  tipo: "link",
-  testo: "https://www.romagna-affitti-brevi.it/#blog"
-},
-{
-  tipo: "titoletto",
-  testo: "Follow us on social media"
-},
-{
-  tipo: "link",
-  testo: "https://www.instagram.com/luceacollection_/"
-},
-],
-attivo: true,
 },
 
+{
+  id: "rab-geo-aeo-smart-working-romagna-2026",
+  titolo: "Appartamento per smart working in Romagna: lavorare da remoto tra mare, colline e borghi",
+  data: "2026-04-23",
+  categoria: "Guida alla Romagna",
+  sommario: "Cerchi un appartamento per smart working in Romagna? Dalla costa adriatica alle colline cesenati, la Romagna offre affitti brevi di qualità con Wi-Fi veloce, spazi confortevoli e un territorio straordinario a portata di pausa. Scopri come organizzare una workation perfetta.",
+  contenuto: [
+    {
+      tipo: "paragrafo",
+      testo: "Immagina di aprire il laptop con la luce del mattino che filtra tra le viti di un agriturismo sulle colline romagnole, o con il profumo del mare che entra dalla finestra di un appartamento a pochi passi dalla spiaggia. La Romagna non è solo una destinazione per le vacanze estive: è un territorio che sa accogliere chi lavora da remoto con la stessa generosità con cui offre piadina calda e vino Sangiovese."
+    },
+    {
+      tipo: "paragrafo",
+      testo: "Il fenomeno della workation — lavorare da un luogo diverso dalla propria città, senza rinunciare alla produttività — ha trovato in Romagna un terreno fertile. Appartamenti con cucina attrezzata, connessione internet stabile, tavoli da lavoro veri e spazi silenziosi: le strutture selezionate in Romagna rispondono sempre più spesso a queste esigenze concrete, senza sacrificare il carattere del luogo."
+    },
+    {
+      tipo: "paragrafo",
+      testo: "Che tu voglia lavorare con vista sul Adriatico, immerso nel verde delle colline tra Cesena e Rimini, o nel silenzio di un borgo medievale dell'entroterra, la scelta è più ampia di quanto si pensi. Ecco tutto quello che devi sapere per organizzare un soggiorno di smart working in Romagna davvero riuscito."
+    },
+    {
+      tipo: "titoletto",
+      testo: "Perché la Romagna è ideale per lo smart working"
+    },
+    {
+      tipo: "paragrafo",
+      testo: "La Romagna ha una caratteristica rara: in meno di un'ora d'auto si passa dalla costa adriatica — con Cesenatico, Rimini e Ravenna — alle colline appenniniche, ai borghi di pietra e ai vigneti. Questa varietà geografica si traduce in una varietà di contesti di lavoro. Chi ha bisogno di concentrazione assoluta trova rifugio nell'entroterra; chi invece preferisce lavorare con energia e poi staccare con una passeggiata sul lungomare ha la costa a portata di mano. Il territorio è ben collegato: la A14 e la SS16 Adriatica permettono spostamenti rapidi, e molti appartamenti vacanze in Romagna si trovano a 20-40 minuti dai principali centri urbani."
+    },
+    {
+      tipo: "titoletto",
+      testo: "Appartamento per smart working in Romagna: cosa cercare"
+    },
+    {
+      tipo: "paragrafo",
+      testo: "Non tutti gli affitti brevi sono uguali, e per chi lavora da remoto alcuni dettagli fanno la differenza. Il primo è la connessione internet: fibra o connessione stabile sono oggi un requisito minimo, non un optional. Il secondo è lo spazio di lavoro: un tavolo vero, una sedia comoda, luce naturale. Il terzo — spesso sottovalutato — è la cucina. Un affitto breve con cucina in Romagna ti permette di gestire i pasti con autonomia, risparmiare e mangiare bene anche nei giorni più intensi, magari con prodotti acquistati al mercato locale. Infine, conta il silenzio: appartamenti in zone residenziali tranquille, agriturismi immersi nel verde o case in borghi storici offrono quella quiete che un hotel in centro non sempre garantisce."
+    },
+    {
+      tipo: "titoletto",
+      testo: "Colline romagnole: smart working nell'entroterra tra Cesena e Rimini"
+    },
+    {
+      tipo: "paragrafo",
+      testo: "Le colline tra Cesena e Rimini sono forse il contesto più sorprendente per chi sceglie la Romagna per lavorare da remoto. Borghi come Longiano, Montiano, Roncofreddo o Savignano sul Rubicone offrono paesaggi di rara bellezza — vigneti, cipressi, calanchi — a 20-30 km dalla costa. Qui si trovano appartamenti indipendenti in casali ristrutturati, agriturismi con piscina e vista panoramica, e B&B immersi nella campagna. Lavorare in questi contesti significa fare una pausa caffè affacciati su un panorama che sembra dipinto, e poi tornare alla scrivania rigenerati. Il portale Emilia-Romagna Turismo (emiliaromagnaturismo.it) offre una mappa completa degli itinerari nell'entroterra romagnolo, utile per pianificare le escursioni nei momenti liberi."
+    },
+    {
+      tipo: "titoletto",
+      testo: "Mare di Romagna: lavorare con vista Adriatico"
+    },
+    {
+      tipo: "paragrafo",
+      testo: "La costa romagnola fuori stagione — o anche in primavera e autunno — è un contesto di smart working sorprendentemente efficace. Le città di mare come Cesenatico, Rimini e Ravenna si svuotano del turismo di massa e ritrovano una dimensione più autentica e silenziosa. Un appartamento vacanze a Rimini o Cesenatico, a 400 metri dal mare, con cucina attrezzata e buona connessione, può diventare la base ideale per settimane di lavoro produttivo. La mattina si lavora, il pomeriggio si cammina sul lungomare o si visita il centro storico. Ravenna, con i suoi mosaici Patrimonio UNESCO, merita una visita anche solo per una sera."
+    },
+    {
+      tipo: "titoletto",
+      testo: "Workation in famiglia: case vacanze per famiglie in Romagna"
+    },
+    {
+      tipo: "paragrafo",
+      testo: "Lo smart working non riguarda solo i freelance o i nomadi digitali solitari. Sempre più famiglie scelgono soggiorni lunghi in Romagna per combinare il lavoro di uno o entrambi i genitori con una vacanza per i figli. Le case vacanze per famiglie in Romagna — appartamenti spaziosi, ville con giardino, agriturismi con animali — sono pensate per chi ha bisogno di spazio, non solo di un letto. Alcune strutture dispongono di aree esterne dove i bambini possono giocare in autonomia mentre i genitori lavorano, e si trovano vicino a parchi, spiagge attrezzate o fattorie didattiche. Un agriturismo sulle colline cesenati, ad esempio, può offrire tutto questo a meno di 40 minuti da Rimini."
+    },
+    {
+      tipo: "titoletto",
+      testo: "Quanto dura una workation in Romagna? Soggiorni settimanali e mensili"
+    },
+    {
+      tipo: "paragrafo",
+      testo: "Una delle domande più frequenti è: quanto conviene restare? La risposta dipende dal tipo di lavoro e dalla stagione. In primavera e autunno, soggiorni di una o due settimane sono ideali: il clima è mite, i prezzi sono più contenuti rispetto all'estate, e il territorio è vivace ma non caotico. In estate, soprattutto luglio e agosto, la costa si anima e i prezzi salgono: in quel caso, l'entroterra romagnolo diventa ancora più conveniente. Alcuni affitti brevi in Romagna accettano soggiorni mensili a tariffe agevolate, soprattutto fuori stagione: vale sempre la pena chiedere direttamente al gestore tramite la piattaforma di prenotazione."
+    },
+    {
+      tipo: "titoletto",
+      testo: "Dove trovare appartamenti per smart working in Romagna: la directory giusta"
+    },
+    {
+      tipo: "paragrafo",
+      testo: "Trovare un appartamento per smart working in Romagna non è difficile, ma trovarne uno davvero adatto — con le caratteristiche giuste, in una posizione coerente con le proprie esigenze e gestito da qualcuno di affidabile — richiede un po' di orientamento. Romagna Affitti Brevi è una directory curata che raccoglie appartamenti, B&B, ville e agriturismi verificati in tutta la Romagna: colline, mare e città d'arte. Ogni struttura è prenotabile direttamente su Airbnb, con le garanzie della piattaforma. Puoi filtrare per zona, tipologia e caratteristiche, e trovare la soluzione più adatta al tuo stile di lavoro e di vita."
+    },
+    {
+      tipo: "titoletto",
+      testo: "Scopri le strutture"
+    },
+    {
+      tipo: "paragrafo",
+      testo: "Sul sito di Romagna Affitti Brevi trovi una selezione curata di appartamenti, B&B, ville e agriturismi in Romagna. Ogni struttura è verificata e prenotabile direttamente su Airbnb."
+    },
+    {
+      tipo: "link",
+      testo: "https://www.romagna-affitti-brevi.it/#strutture",
+      etichetta: "Esplora le strutture"
+    },
+    {
+      tipo: "titoletto",
+      testo: "Leggi anche"
+    },
+    {
+      tipo: "paragrafo",
+      testo: "Sul blog di Romagna Affitti Brevi trovi altri articoli dedicati al territorio, alle esperienze locali e ai consigli pratici per organizzare il tuo soggiorno in Romagna."
+    },
+    {
+      tipo: "link",
+      testo: "https://www.romagna-affitti-brevi.it/#blog"
+    },
+    {
+      tipo: "titoletto",
+      testo: "Seguici sui social"
+    },
+    {
+      tipo: "link",
+      testo: "https://www.instagram.com/luceacollection_/"
+    },
+  ],
+  attivo: true,
+},
 
   {
-    id: "where-to-rent-romagna-2026-en",
-    titolo: "Where to rent in Romagna: a guide to short-term rentals between sea and hills",
+    id: "dove-affittare-romagna-2026",
+    titolo: "Dove affittare in Romagna: guida agli affitti brevi tra mare e colline",
     data: "2026-04-21",
-    categoria: "Romagna Guides",
-    sommario: "Romagna offers some of Italy's most beautiful destinations for a quality short-term rental. From the beaches of Rimini and Cesenatico to the hilltop villages of Bertinoro and Longiano, every corner has its own identity. Here's how to choose the right base for your stay.",
+    categoria: "Guide alla Romagna",
+    sommario: "La Romagna offre alcune delle destinazioni più belle d'Italia per un affitto breve di qualità. Dal mare di Rimini e Cesenatico alle colline di Bertinoro e Longiano, ogni angolo ha la sua identità. Ecco come scegliere la base giusta per il tuo soggiorno.",
     contenuto: [
       {
         tipo: "paragrafo",
-        testo: "Choosing where to rent in Romagna is not as simple as it might seem. The region is compact but extraordinarily varied: within a 40-kilometre radius you can move from the Adriatic coast to vine-covered hills, from medieval city centres to silent inland villages. Each area has a different character, and choosing the right base can make the difference between a generic holiday and an authentic experience.",
+        testo: "Scegliere dove affittare in Romagna non è semplice come sembra. La regione è piccola ma straordinariamente varia: in un raggio di 40 chilometri puoi passare dalla Riviera adriatica alle colline coperte di vigneti, dai centri storici medievali ai borghi silenziosi dell'entroterra. Ogni zona ha un carattere diverso, e la scelta della base giusta può fare la differenza tra una vacanza anonima e un'esperienza autentica.",
       },
       {
         tipo: "titoletto",
-        testo: "The coast: Rimini, Cesenatico and Cervia",
+        testo: "La costa: Rimini, Cesenatico e Cervia",
       },
       {
         tipo: "paragrafo",
-        testo: "The Romagna Riviera is the classic destination for those seeking the sea. Rimini is the largest and most vibrant — ideal for those wanting nightlife, organised beaches and a lively social scene. Cesenatico, with its harbour canal designed by Leonardo da Vinci, has a more intimate character and an extraordinary fresh fish culinary tradition. Cervia, with its saltworks and pine forest, is perfect for those seeking a quieter Riviera suited to families. According to Emilia-Romagna Turismo, the Riviera hosts over 12 million tourist stays every year — but by choosing an apartment rather than a hotel, you can experience the coast as a local.",
+        testo: "La Riviera romagnola è la destinazione classica per chi cerca il mare. Rimini è la più grande e vivace — ideale per chi vuole movida, spiagge attrezzate e una vita notturna intensa. Cesenatico, con il suo porto canale progettato da Leonardo da Vinci, ha un carattere più raccolto e una tradizione culinaria di pesce straordinaria. Cervia, con le sue saline e la pineta, è perfetta per chi cerca una Riviera più tranquilla e a misura di famiglia. Secondo Emilia-Romagna Turismo, la Riviera ospita oltre 12 milioni di presenze turistiche ogni anno — ma scegliendo un appartamento invece di un hotel, puoi vivere la costa come un locale.",
       },
       {
         tipo: "titoletto",
-        testo: "The hills: Bertinoro, Longiano and the inland villages",
+        testo: "Le colline: Bertinoro, Longiano e i borghi dell'entroterra",
       },
       {
         tipo: "paragrafo",
-        testo: "Just 20-30 minutes from the coast, the Romagna hills offer a completely different experience. Bertinoro is known as the Balcony of Romagna — from its medieval fortress you can see both the hills and the sea. Longiano preserves its Malatesta castle intact. Meldola, Predappio and Civitella di Romagna are authentic villages where life still follows the rhythms of the countryside. For those seeking silence, clean air and a cuisine not yet affected by mass tourism, the hills are the wisest choice.",
+        testo: "A soli 20-30 minuti dalla costa, le colline romagnole offrono un'esperienza completamente diversa. Bertinoro è chiamata il Balcone della Romagna — dalla sua rocca medievale si vedono sia le colline che il mare. Longiano conserva intatto il suo castello malatestiano. Meldola, Predappio e Civitella di Romagna sono borghi autentici dove la vita scorre ancora ai ritmi della campagna. Per chi cerca silenzio, aria pulita e una cucina non ancora contaminata dal turismo di massa, le colline sono la scelta più intelligente.",
       },
       {
         tipo: "titoletto",
-        testo: "The art cities: Ravenna, Cesena and Forlì",
+        testo: "Le città d'arte: Ravenna, Cesena e Forlì",
       },
       {
         tipo: "paragrafo",
-        testo: "Those who come to Romagna for culture cannot miss Ravenna — eight UNESCO monuments, the finest mosaics in the Western world, and a historic centre that can be explored entirely on foot. Cesena, with its Malatesta Library (the first public library in Europe) and the Rocca fortress, is a lively university city that remains underrated. Forlì has a nationally significant 20th-century art collection and a perfectly readable Roman-plan historic centre. An apartment in a central location in one of these cities makes the ideal base for a cultural itinerary.",
+        testo: "Chi viene in Romagna per la cultura non può mancare Ravenna — otto monumenti UNESCO, i mosaici più belli del mondo occidentale, e un centro storico che si esplora comodamente a piedi. Cesena, con la sua Biblioteca Malatestiana (la prima biblioteca pubblica d'Europa) e la Rocca, è una città universitaria vivace e underrated. Forlì ha una collezione di arte del Novecento di livello nazionale e un centro storico di impianto romano perfettamente leggibile. Un appartamento in posizione centrale in una di queste città è la base ideale per un itinerario culturale.",
       },
       {
         tipo: "titoletto",
-        testo: "How to choose the right base",
+        testo: "Come scegliere la base giusta",
       },
       {
         tipo: "paragrafo",
-        testo: "The answer depends on what you want to do. If the sea is the priority, choose Rimini, Cesenatico or Cervia. If you want to combine sea and culture, an apartment in Ravenna lets you reach the beach in 15 minutes and the mosaics on foot. If you seek authenticity and tranquillity, the hills are unbeatable. And if you want to explore everything — sea, hills and cities — choose a central base like Cesena or Forlì, from where you can reach every corner of Romagna in under 40 minutes.",
+        testo: "La risposta dipende da cosa vuoi fare. Se il mare è la priorità, scegli Rimini, Cesenatico o Cervia. Se vuoi combinare mare e cultura, un appartamento a Ravenna ti permette di raggiungere la spiaggia in 15 minuti e i mosaici a piedi. Se cerchi autenticità e tranquillità, le colline sono imbattibili. E se vuoi esplorare tutto — mare, colline e città — scegli una base centrale come Cesena o Forlì, da dove raggiungi ogni angolo della Romagna in meno di 40 minuti.",
       },
       {
         tipo: "link",
-        testo: "https://www.romagna-short-stay.com/",
-        etichetta: "Browse properties in the directory",
+        testo: "https://www.romagna-affitti-brevi.it/",
+        etichetta: "Scopri le strutture in directory",
       },
       {
         tipo: "titoletto",
-        testo: "Read also",
+        testo: "Leggi anche",
       },
       {
         tipo: "paragrafo",
-        testo: "On the Romagna Short Stay blog you'll find territory guides, tips for choosing the right accommodation and authentic stories about Romagna. Every article is written by someone who truly knows this land.",
+        testo: "Sul blog di Romagna Affitti Brevi trovi guide al territorio, consigli per scegliere l'alloggio giusto e racconti autentici sulla Romagna. Ogni articolo è scritto da chi conosce davvero questa terra.",
       },
       {
         tipo: "link",
-        testo: "https://www.romagna-short-stay.com/#blog",
-        etichetta: "All articles",
+        testo: "https://www.romagna-affitti-brevi.it/#blog",
+        etichetta: "Tutti gli articoli",
       },
     ],
     attivo: true,
