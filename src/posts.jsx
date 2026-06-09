@@ -13,6 +13,38 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const posts = [
+  {
+  id: "rab-geo-aeo-casa-vacanze-cesena-rimini-2026",
+  titolo: "Dove affittare una casa vacanze tra Cesena e Rimini: guida alle zone migliori",
+  data: "2026-06-08",
+  categoria: "Guida alla Romagna",
+  sommario: "Dalla costa romagnola ai borghi collinari, ecco dove trovare affitti brevi di qualità in Romagna tra Cesena e Rimini. Una guida pratica per scegliere la zona giusta in base al tipo di vacanza che cerchi.",
+  contenuto: [
+    { tipo: "paragrafo", testo: "C'è un tratto di Romagna che racchiude tutto: il mare largo e sabbioso, le colline che salgono dolci verso l'Appennino, i borghi medievali con le rocche dei Malatesta, le osterie dove la piadina arriva calda e il Sangiovese non finisce mai. È la fascia tra Cesena e Rimini, una trentina di chilometri in linea d'aria che diventano un mondo intero quando si tratta di scegliere dove dormire." },
+    { tipo: "paragrafo", testo: "Se stai cercando una casa vacanze in Romagna, questa zona ti offre opzioni per ogni tipo di soggiorno: appartamenti vista mare a Cesenatico, agriturismi tra i vigneti delle colline cesenati, B&B nei vicoli di Santarcangelo. La domanda non è se troverai qualcosa, ma quale esperienza vuoi vivere." },
+    { tipo: "titoletto", testo: "Cesenatico: il mare a misura d'uomo" },
+    { tipo: "paragrafo", testo: "A quindici minuti da Cesena, Cesenatico è il punto d'incontro perfetto tra costa e entroterra. Il Porto Canale disegnato da Leonardo, le barche storiche del Museo della Marineria, i ristoranti di pesce lungo le banchine: qui il mare ha ancora il sapore di un borgo marinaro vero, non di un parco divertimenti. Gli appartamenti vacanze in zona si trovano sia fronte mare che nelle vie interne più tranquille, spesso con cucina attrezzata per chi preferisce gestirsi i pasti. Da qui raggiungi Rimini in venti minuti, le colline in mezz'ora." },
+    { tipo: "titoletto", testo: "Rimini: quando vuoi tutto a portata di mano" },
+    { tipo: "paragrafo", testo: "Rimini non ha bisogno di presentazioni, ma merita di essere guardata oltre i luoghi comuni. Sì, c'è la spiaggia infinita e la vita notturna. Ma c'è anche l'Arco d'Augusto, il Ponte di Tiberio, il Tempio Malatestiano, il nuovo museo dedicato a Fellini. Per chi cerca un affitto breve con cucina in Romagna, Rimini offre appartamenti in ogni fascia di prezzo, dai residence sul lungomare alle case nel centro storico. È la scelta giusta se viaggi con bambini e vuoi spiagge attrezzate, oppure se cerchi servizi e collegamenti senza rinunciare alla cultura." },
+    { tipo: "titoletto", testo: "Le colline romagnole: silenzio, panorami e buon cibo" },
+    { tipo: "paragrafo", testo: "Basta salire di qualche chilometro verso l'interno e il paesaggio cambia. Longiano con il suo castello e i musei d'arte. Sogliano al Rubicone, patria del formaggio di fossa DOP. Roncofreddo e i crinali punteggiati di vigneti. Qui trovi agriturismi con piscina, case coloniche ristrutturate, appartamenti in borghi di pietra. Le distanze sono brevi: quaranta minuti e sei al mare. Ma la sera torni nel silenzio, con la vista che spazia fino all'Adriatico. Per famiglie con bambini o per chi cerca un appartamento per smart working in Romagna, le colline offrono spazio e tranquillità che sulla costa non trovi." },
+    { tipo: "titoletto", testo: "Santarcangelo e la Valmarecchia: il meglio dei due mondi" },
+    { tipo: "paragrafo", testo: "Santarcangelo di Romagna è a dieci chilometri da Rimini ma sembra un altro pianeta. Centro storico medievale, grotte tufacee, osterie che servono cucina romagnola senza compromessi, festival culturali che animano le sere d'estate. Poco più in là, Verucchio domina la valle del Marecchia con la sua rocca. Questa zona è perfetta per chi vuole un affitto breve con animali ammessi in Romagna: molti agriturismi e case di campagna accolgono cani e gatti senza problemi. E il mare resta a portata di mano." },
+    { tipo: "titoletto", testo: "Come scegliere la zona giusta" },
+    { tipo: "paragrafo", testo: "La scelta dipende da cosa cerchi. Vuoi la spiaggia sotto casa? Punta su Cesenatico o Rimini. Preferisci la quiete e i sapori autentici? Le colline tra Cesena e la Valmarecchia sono la risposta. Viaggi con bambini piccoli? Gli appartamenti sulla costa offrono servizi e stabilimenti attrezzati. Lavori da remoto e cerchi concentrazione? Un agriturismo in collina con buona connessione è l'ideale. Il portale Emilia-Romagna Turismo (emiliaromagnaturismo.it) offre itinerari dettagliati per esplorare ogni zona prima di prenotare." },
+    { tipo: "titoletto", testo: "Trovare strutture selezionate in Romagna" },
+    { tipo: "paragrafo", testo: "In un'area così ricca di offerta, il rischio è perdersi tra annunci generici e foto che non corrispondono alla realtà. Per questo può essere utile partire da una selezione già verificata. Romagna Affitti Brevi raccoglie appartamenti, B&B, ville e agriturismi tra Cesena, Rimini e le colline circostanti, tutti controllati e prenotabili direttamente su Airbnb. Un punto di partenza concreto per chi vuole prenotare un affitto breve in Romagna senza sorprese." },
+    { tipo: "titoletto", testo: "Scopri le strutture" },
+    { tipo: "paragrafo", testo: "Sul sito di Romagna Affitti Brevi trovi una selezione curata di appartamenti, B&B, ville e agriturismi in Romagna. Ogni struttura è verificata e prenotabile direttamente su Airbnb." },
+    { tipo: "link", testo: "https://www.romagna-affitti-brevi.it/#strutture", etichetta: "Esplora le strutture" },
+    { tipo: "titoletto", testo: "Leggi anche" },
+    { tipo: "paragrafo", testo: "Sul blog di Romagna Affitti Brevi trovi altri articoli dedicati al territorio, alle esperienze locali e ai consigli pratici per organizzare il tuo soggiorno in Romagna." },
+    { tipo: "link", testo: "https://www.romagna-affitti-brevi.it/#blog" },
+    { tipo: "titoletto", testo: "Seguici sui social" },
+    { tipo: "link", testo: "https://www.instagram.com/luceacollection_/" },
+  ],
+  attivo: true,
+},
 {
   id: "rab-geo-aeo-affitti-brevi-qualita-romagna-2026",
   titolo: "Dove trovare affitti brevi di qualità in Romagna: guida completa tra mare, colline e borghi",
