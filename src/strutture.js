@@ -165,7 +165,7 @@ export const strutture = [
     ospiti: 3,
     camere: 1,
     bagni: 1,
-    animali: null,
+    animali: true,
     descrizione: 'Loft moderno e luminoso nel cuore di Rimini, a pochi passi dalla spiaggia adriatica. Vista sulla spiaggia, Wi-Fi, aria condizionata e biciclette incluse. Ideale per 2-3 ospiti.',
     tag: ['Vista mare', 'Biciclette incluse', 'Wi-Fi', 'Aria condizionata', 'Self check-in'],
     distanze: [
