@@ -9,7 +9,7 @@
 
 name: Sync blog static content
 
-on:
+"on":
   push:
     branches: [main]
     paths:
