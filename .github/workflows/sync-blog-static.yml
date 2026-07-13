@@ -1,1 +1,47 @@
+# Rigenera automaticamente il blocco statico del blog dentro index.html (tra i
+# marcatori BLOG-STATIC-START/END) ogni volta che src/posts.jsx viene modificato,
+# e ricommitta il risultato sul repo. Risolve il disallineamento tra il file su
+# GitHub (altrimenti fermo all'ultima generazione manuale) e quello realmente
+# pubblicato da Vercel ad ogni build.
+#
+# Non serve "npm install": lo script generate-blog-noscript.mjs usa solo moduli
+# built-in di Node (fs, url, path), nessuna dipendenza esterna.
 
+name: Sync blog static content
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/posts.jsx'
+
+# Necessario perche' il job possa ricommittare index.html sul repo.
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Rigenera blocco statico blog
+        run: node generate-blog-noscript.mjs
+
+      - name: Commit e push se index.html e' cambiato
+        run: |
+          if git diff --quiet -- index.html; then
+            echo "index.html gia' aggiornato, nessun commit necessario."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add index.html
+            git commit -m "Rigenera blog statico [automatico]"
+            git push
+          fi
