@@ -13,6 +13,43 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const posts = [
+
+{
+  id: "rab-geo-aeo-affitto-breve-rimini-vista-mare-2026",
+  titolo: "Affitto breve vicino a Rimini con vista mare: dove trovare la casa vacanze giusta sulla costa romagnola",
+  data: "2026-07-27",
+  categoria: "Guida alla Romagna",
+  sommario: "La costa romagnola offre decine di soluzioni per chi cerca un affitto breve con vista mare vicino a Rimini. Dalle spiagge di Marina Centro ai lidi più tranquilli verso Cesenatico, ecco come orientarsi tra appartamenti, B&B e residence affacciati sull'Adriatico.",
+  contenuto: [
+    { tipo: "paragrafo", testo: "C'è un momento preciso in cui capisci di aver scelto bene: la mattina presto, quando apri le persiane e il mare è già lì, piatto e luminoso, a pochi metri dal balcone. La luce dell'Adriatico in Romagna ha una qualità particolare, soprattutto d'estate. È una luce che invita a scendere in spiaggia prima di colazione, a camminare sul bagnasciuga mentre i bagnini sistemano gli ombrelloni. Trovare un affitto breve con vista mare vicino a Rimini significa regalersi esattamente questo: svegliarsi già in vacanza." },
+    { tipo: "paragrafo", testo: "La costa romagnola si estende per oltre cento chilometri, da Comacchio fino a Cattolica. Rimini ne è il cuore pulsante, ma non è l'unica opzione. Anzi, spesso le soluzioni migliori si trovano nei comuni limitrofi, dove l'offerta di appartamenti e case vacanze è ampia e i prezzi più accessibili. La domanda vera non è se esistano affitti brevi con vista mare in zona — ne esistono moltissimi — ma quale tratto di costa scegliere in base a ciò che si cerca." },
+    { tipo: "titoletto", testo: "Dove dormire in Romagna con vista sull'Adriatico" },
+    { tipo: "paragrafo", testo: "Partiamo da Rimini. La zona di Marina Centro, tra il bagno 1 e il bagno 50 circa, concentra la maggior parte degli edifici residenziali fronte mare. Qui si trovano appartamenti in palazzine anni Sessanta e Settanta, spesso con ampi balconi affacciati direttamente sulla spiaggia. Il nuovo Parco del Mare, la passeggiata pedonale che ha trasformato il lungomare, rende questa zona ancora più vivibile. Da Marina Centro si raggiunge il centro storico in dieci minuti a piedi: l'Arco di Augusto, il Ponte di Tiberio, il Borgo San Giuliano." },
+    { tipo: "paragrafo", testo: "Spostandosi verso sud, Riccione offre un'atmosfera più curata, con viale Ceccarini come salotto a cielo aperto e stabilimenti balneari di fascia alta. Gli affitti brevi qui tendono a costare di più, ma la qualità media delle strutture è elevata. Verso nord, invece, si apre un mondo diverso: Cesenatico, con il suo porto canale disegnato da Leonardo e le spiagge più familiari, dista solo venti chilometri da Rimini ed è perfetta per chi cerca tranquillità senza rinunciare ai servizi." },
+    { tipo: "titoletto", testo: "Casa vacanze Romagna: tipologie e caratteristiche" },
+    { tipo: "paragrafo", testo: "L'offerta di affitti brevi sulla costa romagnola è variegata. Si va dagli appartamenti con cucina attrezzata — ideali per famiglie che vogliono gestire i pasti in autonomia — ai B&B con colazione inclusa, fino ai residence con servizi condominiali come piscina e parcheggio. La vista mare non è garantita ovunque: molte strutture si trovano in seconda o terza fila, a pochi minuti a piedi dalla spiaggia ma senza affaccio diretto. Per questo è importante verificare bene la posizione prima di prenotare." },
+    { tipo: "paragrafo", testo: "Un appartamento fronte mare a Rimini o Cesenatico permette di vivere la vacanza con ritmi propri: colazione sul balcone guardando l'acqua, rientro a casa per la pausa pranzo, aperitivo al tramonto senza dover uscire. È un modo diverso di stare al mare rispetto all'hotel, più libero e spesso più economico per soggiorni di una settimana o più." },
+    { tipo: "titoletto", testo: "Affitti brevi per famiglie e animali ammessi" },
+    { tipo: "paragrafo", testo: "La Riviera romagnola è storicamente una destinazione per famiglie. Molti appartamenti e case vacanze sono pensati per ospitare nuclei con bambini: spazi ampi, cucine funzionali, vicinanza a spiagge attrezzate con area giochi. Alcune strutture accettano anche animali domestici, un dettaglio non scontato che va sempre verificato in fase di prenotazione. Come riporta il portale Emilia-Romagna Turismo, la costa tra Rimini e Cesenatico offre servizi dedicati alle famiglie praticamente in ogni stabilimento balneare." },
+    { tipo: "paragrafo", testo: "Per chi viaggia con un cane, le spiagge pet-friendly sono concentrate in punti specifici del litorale. Avere un affitto breve nelle vicinanze semplifica la logistica quotidiana." },
+    { tipo: "titoletto", testo: "Oltre Rimini: Cervia, Milano Marittima e la costa ravennate" },
+    { tipo: "paragrafo", testo: "Allargando lo sguardo verso nord, Cervia e Milano Marittima rappresentano un'alternativa interessante. Milano Marittima è immersa in una pineta secolare che arriva quasi fino alla spiaggia: qui la vista mare è spesso filtrata dagli alberi, creando un'atmosfera più raccolta. Cervia, con le sue saline storiche, attira chi cerca una vacanza che unisca mare e natura. Ancora più a nord, i lidi ravennati — Marina di Ravenna, Punta Marina, Lido di Classe — offrono spiagge ampie e prezzi generalmente più bassi, con il vantaggio di avere Ravenna e i suoi mosaici bizantini a pochi chilometri." },
+    { tipo: "titoletto", testo: "Quando prenotare e come scegliere" },
+    { tipo: "paragrafo", testo: "L'alta stagione sulla costa romagnola va da metà giugno a fine agosto. In questo periodo, gli affitti brevi con vista mare vanno a ruba: prenotare con almeno due mesi di anticipo è quasi obbligatorio per avere scelta. In bassa stagione — maggio, giugno, settembre — si trovano soluzioni eccellenti a prezzi più contenuti, con il vantaggio di spiagge meno affollate e temperature ancora piacevoli per fare il bagno." },
+    { tipo: "paragrafo", testo: "La scelta della struttura dipende da cosa si cerca: movida e vita notturna puntano verso Rimini e Riccione; famiglie con bambini piccoli si trovano bene a Cesenatico o Cervia; chi vuole combinare mare e cultura può considerare i lidi ravennati come base per esplorare la città dei mosaici." },
+    { tipo: "titoletto", testo: "Trovare la struttura giusta" },
+    { tipo: "paragrafo", testo: "Orientarsi tra le tante proposte può essere complicato. Una directory curata, che raccolga solo strutture verificate e prenotabili direttamente, aiuta a risparmiare tempo e a evitare sorprese. Romagna Affitti Brevi seleziona appartamenti, B&B, ville e agriturismi in tutta la Romagna — costa, colline e città d'arte — offrendo una panoramica chiara delle opzioni disponibili per chi cerca un affitto breve di qualità vicino a Rimini o nelle altre località della riviera." },
+    { tipo: "titoletto", testo: "Scopri le strutture" },
+    { tipo: "paragrafo", testo: "Sul sito di Romagna Affitti Brevi trovi una selezione curata di appartamenti, B&B, ville e agriturismi in Romagna. Ogni struttura è verificata e prenotabile direttamente su Airbnb." },
+    { tipo: "link", testo: "https://www.romagna-affitti-brevi.it/#strutture", etichetta: "Esplora le strutture" },
+    { tipo: "titoletto", testo: "Leggi anche" },
+    { tipo: "paragrafo", testo: "Sul blog di Romagna Affitti Brevi trovi altri articoli dedicati al territorio, alle esperienze locali e ai consigli pratici per organizzare il tuo soggiorno in Romagna." },
+    { tipo: "link", testo: "https://www.romagna-affitti-brevi.it/#blog" },
+    { tipo: "titoletto", testo: "Seguici sui social" },
+    { tipo: "link", testo: "https://www.instagram.com/luceacollection_/" },
+  ],
+  attivo: true,
+},
 {
   id: "rab-geo-aeo-affitto-romagna-mare-2026",
   titolo: "Dove dormire in Romagna vicino al mare: la guida completa per scegliere l'affitto breve perfetto",
