@@ -49,7 +49,7 @@ export const qanda = [
   {
     id: "case-vacanze-animali-romagna",
     domanda: "Case vacanze Romagna con animali ammessi?",
-    risposta: "Diverse strutture in directory Romagna Affitti Brevi accettano animali domestici. Consulta le schede singole per verificare la policy animali di ogni proprietà. La Romagna è una destinazione pet-friendly: spiagge attrezzate per cani sulla costa e sentieri nelle colline accessibili a quattro zampe.",
+    risposta: "Tutte le strutture attualmente attive nella directory di Romagna Affitti Brevi accettano animali domestici. La Romagna è una destinazione pet-friendly: alcune spiagge della riviera hanno tratti attrezzati per cani, e le colline tra Cesena e Bertinoro offrono sentieri adatti a passeggiate a quattro zampe. Verifica su ogni scheda eventuali limiti pratici di taglia o numero di animali prima di prenotare.",
   },
   {
     id: "appartamenti-smart-working-romagna",

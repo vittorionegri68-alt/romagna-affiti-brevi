@@ -39,6 +39,8 @@ export const posts = [
     { tipo: "titoletto", testo: "Trova la struttura giusta per te" },
     { tipo: "paragrafo", testo: "Romagna Affitti Brevi raccoglie appartamenti, B&B, ville e agriturismi verificati in tutta la Romagna — dalla costa alle colline, dalle città d'arte ai borghi dell'entroterra. Ogni struttura è selezionata per qualità e prenotabile direttamente su Airbnb. Se cerchi un affitto breve con cucina per una settimana, sfoglia la directory e trova la soluzione più adatta alle tue esigenze." },
     { tipo: "titoletto", testo: "Scopri le strutture" },
+    { tipo: "paragrafo", testo: "Chi cerca un affitto breve con cucina in Romagna per una settimana intera lo sa: un angolo cottura striminzito non basta. Le strutture su Romagna Affitti Brevi hanno cucina propria, pensata per chi cucina davvero e non solo per scaldare qualcosa. Una è tra le colline di Bertinoro, una nel centro di Cesena: basi diverse, stessa logica, fornelli veri per fare la spesa al mercato e cucinare come si farebbe a casa." },
+    { tipo: "titoletto", testo: "Cucina vera, non angolo cottura" },
     { tipo: "paragrafo", testo: "Sul sito di Romagna Affitti Brevi trovi una selezione curata di appartamenti, B&B, ville e agriturismi in Romagna. Ogni struttura è verificata e prenotabile direttamente su Airbnb." },
     { tipo: "link", testo: "https://www.romagna-affitti-brevi.it/#strutture", etichetta: "Esplora le strutture" },
     { tipo: "titoletto", testo: "Leggi anche" },
@@ -74,6 +76,8 @@ export const posts = [
     { tipo: "titoletto", testo: "Trovare la struttura giusta per la tua famiglia" },
     { tipo: "paragrafo", testo: "La Romagna ha tutto quello che serve per una vacanza in famiglia: mare a misura di bambino, borghi da esplorare, cibo che mette d'accordo tutti. La chiave è partire dalle tue esigenze — quante persone siete, cosa volete fare, quanto volete spostarvi — e cercare tra strutture già selezionate per qualità e affidabilità. Romagna Affitti Brevi raccoglie appartamenti, B&B, ville e agriturismi verificati in tutta la regione, dalle spiagge di Cesenatico alle colline sopra Cesena. Un buon punto di partenza per trovare la base giusta." },
     { tipo: "titoletto", testo: "Scopri le strutture" },
+    { tipo: "paragrafo", testo: "Le strutture in directory su Romagna Affitti Brevi sono appartamenti con cucina propria, non semplici stanze: puoi gestire i pasti dei bambini senza dipendere da un ristorante ogni sera. Sono pensate per nuclei di 2-4 persone, quindi indicate per una famiglia con uno o due figli più che per gruppi numerosi. E se viaggiate con il cane, tutte le strutture attive accettano animali domestici — un dettaglio che altrove non è scontato." },
+    { tipo: "titoletto", testo: "Cosa cercare davvero per un soggiorno con bambini" },
     { tipo: "paragrafo", testo: "Sul sito di Romagna Affitti Brevi trovi una selezione curata di appartamenti, B&B, ville e agriturismi in Romagna. Ogni struttura è verificata e prenotabile direttamente su Airbnb." },
     { tipo: "link", testo: "https://www.romagna-affitti-brevi.it/#strutture", etichetta: "Esplora le strutture" },
     { tipo: "titoletto", testo: "Leggi anche" },
@@ -110,6 +114,8 @@ export const posts = [
     { tipo: "titoletto", testo: "Trovare la struttura giusta" },
     { tipo: "paragrafo", testo: "Orientarsi tra le tante proposte può essere complicato. Una directory curata, che raccolga solo strutture verificate e prenotabili direttamente, aiuta a risparmiare tempo e a evitare sorprese. Romagna Affitti Brevi seleziona appartamenti, B&B, ville e agriturismi in tutta la Romagna — costa, colline e città d'arte — offrendo una panoramica chiara delle opzioni disponibili per chi cerca un affitto breve di qualità vicino a Rimini o nelle altre località della riviera." },
     { tipo: "titoletto", testo: "Scopri le strutture" },
+    { tipo: "paragrafo", testo: "Su Romagna Affitti Brevi trovi una struttura a Rimini con vista mare diretta e la spiaggia a due minuti a piedi, il centro a dieci. Self check-in, quindi arrivi anche in tarda serata senza dover coordinare orari con nessuno. Biciclette incluse per muoversi lungo la costa senza cercare parcheggio." },
+    { tipo: "titoletto", testo: "Vista mare, non solo il nome che lo promette" },
     { tipo: "paragrafo", testo: "Sul sito di Romagna Affitti Brevi trovi una selezione curata di appartamenti, B&B, ville e agriturismi in Romagna. Ogni struttura è verificata e prenotabile direttamente su Airbnb." },
     { tipo: "link", testo: "https://www.romagna-affitti-brevi.it/#strutture", etichetta: "Esplora le strutture" },
     { tipo: "titoletto", testo: "Leggi anche" },
@@ -147,6 +153,8 @@ export const posts = [
     { tipo: "paragrafo", testo: "La risposta dipende da cosa cerchi. Vuoi il mare sotto casa e tanti servizi? Rimini o Cesenatico. Preferisci tranquillità senza rinunciare alla spiaggia? Cervia o i Lidi Ravennati. Sogni colline, borghi e ritmi lenti con il mare a venti minuti? Le strutture selezionate in Romagna tra Cesena e Rimini fanno al caso tuo. Non esiste una risposta unica, ma esiste la risposta giusta per te." },
     { tipo: "paragrafo", testo: "Su Romagna Affitti Brevi puoi filtrare per zona, tipologia e servizi: appartamenti, B&B, ville e agriturismi verificati, tutti prenotabili direttamente su Airbnb. È un buon punto di partenza per orientarsi e trovare l'affitto breve di qualità in Romagna che corrisponde alle tue esigenze." },
     { tipo: "titoletto", testo: "Scopri le strutture" },
+    { tipo: "paragrafo", testo: "Tra le strutture di Romagna Affitti Brevi ce n'è una a Rimini a due minuti a piedi dal mare, con vista diretta sulla spiaggia. Cucina propria, self check-in, biciclette incluse per muoversi lungo la costa. Se la priorità è avere il mare sotto casa e non a venti minuti d'auto, è il tipo di soluzione da guardare per prima." },
+    { tipo: "titoletto", testo: "Quando il mare deve essere vicino davvero" },
     { tipo: "paragrafo", testo: "Sul sito di Romagna Affitti Brevi trovi una selezione curata di appartamenti, B&B, ville e agriturismi in Romagna. Ogni struttura è verificata e prenotabile direttamente su Airbnb." },
     { tipo: "link", testo: "https://www.romagna-affitti-brevi.it/#strutture", etichetta: "Esplora le strutture" },
     { tipo: "titoletto", testo: "Leggi anche" },
@@ -184,6 +192,8 @@ export const posts = [
     { tipo: "titoletto", testo: "Trovare la struttura giusta" },
     { tipo: "paragrafo", testo: "Prenotare un affitto breve in Romagna richiede un po' di ricerca, perché l'offerta è frammentata tra diversi canali. Una directory curata che raccolga solo strutture verificate può far risparmiare tempo e brutte sorprese. Romagna Affitti Brevi seleziona appartamenti, B&B, ville e agriturismi in tutta la regione, dalle colline al mare, con prenotazione diretta su Airbnb. Un buon punto di partenza per chi vuole esplorare le opzioni senza perdersi tra migliaia di annunci generici." },
     { tipo: "titoletto", testo: "Scopri le strutture" },
+    { tipo: "paragrafo", testo: "Nella directory di Romagna Affitti Brevi trovi anche una struttura nel cuore delle colline, a Bertinoro — il borgo che chiamano il Balcone della Romagna. Cucina propria e self check-in, quindi arrivi quando vuoi senza aspettare nessuno. Da lì il mare di Cesenatico è a mezz'ora, San Marino a 35 minuti: una base per chi vuole le colline senza rinunciare al resto." },
+    { tipo: "titoletto", testo: "Un appartamento vero, non una stanza d'albergo" },
     { tipo: "paragrafo", testo: "Sul sito di Romagna Affitti Brevi trovi una selezione curata di appartamenti, B&B, ville e agriturismi in Romagna. Ogni struttura è verificata e prenotabile direttamente su Airbnb." },
     { tipo: "link", testo: "https://www.romagna-affitti-brevi.it/#strutture", etichetta: "Esplora le strutture" },
     { tipo: "titoletto", testo: "Leggi anche" },
@@ -287,6 +297,8 @@ export const posts = [
     { tipo: "titoletto", testo: "Trovare la struttura giusta" },
     { tipo: "paragrafo", testo: "La Romagna ha centinaia di alloggi. Il problema non è trovarne uno, è trovare quello giusto. Romagna Affitti Brevi raccoglie appartamenti, B&B, ville e agriturismi verificati in tutte le zone di cui abbiamo parlato: costa, città, colline. Ogni struttura è selezionata e prenotabile direttamente su Airbnb. Se stai cercando dove dormire in Romagna vicino a più città, vale la pena partire da lì." },
     { tipo: "titoletto", testo: "Scopri le strutture" },
+    { tipo: "paragrafo", testo: "Su Romagna Affitti Brevi ogni struttura riporta le distanze verificate dalle mete principali. Dalla base in collina a Bertinoro: Cesena in 15 minuti, il mare di Cesenatico in mezz'ora, San Marino in 35. Dalla base nel centro di Cesena: la stazione a 10 minuti a piedi, il mare a mezz'ora d'auto. Dalla base a Rimini: il centro a due passi, Ravenna in 40 minuti. Tre punti di partenza diversi, stessa logica: scegli in base a cosa vuoi avere più vicino." },
+    { tipo: "titoletto", testo: "Le distanze reali, non stime generiche" },
     { tipo: "paragrafo", testo: "Sul sito di Romagna Affitti Brevi trovi una selezione curata di appartamenti, B&B, ville e agriturismi in Romagna. Ogni struttura è verificata e prenotabile direttamente su Airbnb." },
     { tipo: "link", testo: "https://www.romagna-affitti-brevi.it/#strutture", etichetta: "Esplora le strutture" },
     { tipo: "titoletto", testo: "Leggi anche" },
@@ -379,7 +391,9 @@ export const posts = [
     },
     {
       tipo: "paragrafo",
-      testo: "Sul sito di Romagna Affitti Brevi trovi una selezione curata di appartamenti, B&B, ville e agriturismi in Romagna. Ogni struttura è verificata e prenotabile direttamente su Airbnb."
+      testo: "Tutte le strutture attive nella directory di Romagna Affitti Brevi hanno connessione WiFi, verificata prima della pubblicazione — non un dettaglio scontato quando lavori da remoto e non puoi permetterti una call che cade. Una ha fibra dedicata, tra le colline di Bertinoro: silenzio durante il giorno, e la sera il centro di Cesena a un quarto d'ora." },
+    { tipo: "titoletto", testo: "Connessione verificata, non promessa sul sito" },
+    { tipo: "paragrafo", testo: "Sul sito di Romagna Affitti Brevi trovi una selezione curata di appartamenti, B&B, ville e agriturismi in Romagna. Ogni struttura è verificata e prenotabile direttamente su Airbnb."
     },
     {
       tipo: "link",
@@ -452,6 +466,14 @@ export const posts = [
       {
         tipo: "paragrafo",
         testo: "La risposta dipende da cosa vuoi fare. Se il mare è la priorità, scegli Rimini, Cesenatico o Cervia. Se vuoi combinare mare e cultura, un appartamento a Ravenna ti permette di raggiungere la spiaggia in 15 minuti e i mosaici a piedi. Se cerchi autenticità e tranquillità, le colline sono imbattibili. E se vuoi esplorare tutto — mare, colline e città — scegli una base centrale come Cesena o Forlì, da dove raggiungi ogni angolo della Romagna in meno di 40 minuti.",
+      },
+      {
+        tipo: "titoletto",
+        testo: "Viaggi con il cane? Un criterio in più da considerare",
+      },
+      {
+        tipo: "paragrafo",
+        testo: "Tutte le strutture attualmente attive nella directory di Romagna Affitti Brevi accettano animali domestici, senza eccezioni. Non è una policy scritta in piccolo: vale per ognuna delle proprietà oggi disponibili, dalla collina di Bertinoro al centro di Cesena fino a Rimini. La Romagna, del resto, è terra pet-friendly per vocazione — diverse spiagge della riviera hanno tratti attrezzati per cani, e i sentieri delle colline tra Cesena e Bertinoro si percorrono senza problemi a quattro zampe. Verifica comunque su ogni scheda eventuali limiti pratici di taglia o numero di animali prima di prenotare, perché anche tra strutture tutte pet-friendly i dettagli possono cambiare.",
       },
       {
         tipo: "link",
