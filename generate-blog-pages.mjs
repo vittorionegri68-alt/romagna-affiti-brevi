@@ -155,7 +155,7 @@ function renderPage(post) {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
     <title>${escapeHtml(title)}</title>
     <meta name="description" content="${escapeAttr(description)}" />
     <link rel="canonical" href="${escapeAttr(url)}" />
