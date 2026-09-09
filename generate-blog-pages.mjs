@@ -48,22 +48,33 @@ function isBlogHomeLink(b) {
   return b.tipo === "link" && b.testo.includes("romagna-affitti-brevi.it/#blog");
 }
 
-// L'articolo ha tipicamente un link verso #blog sotto "Leggi anche", senza
-// etichetta (quindi renderizzato come URL grezzo): qui viene rimosso e
-// reinserito con etichetta corretta, stessa correzione già applicata su
-// Casa Cavour.
+// I link "Leggi anche" (2 per articolo, verso articoli realmente correlati,
+// con etichetta breve sull'argomento trattato) sono scritti a mano
+// direttamente in posts.jsx, subito dopo il paragrafo "Leggi anche". Questo
+// script non li genera più: li lascia passare così come sono, identici sia
+// qui sia nel rendering React live.
+//
+// Rete di sicurezza: se un articolo non ha nessun link dopo "Leggi anche"
+// (oggi non succede per nessuno dei 10, ma potrebbe succedere per un futuro
+// nuovo articolo), viene inserito un singolo bottone "Tutti gli articoli"
+// verso #blog. Qualunque link verso #blog scritto per errore altrove nel
+// contenuto viene comunque rimosso, per evitare doppioni con questo fallback.
+const FALLBACK_TUTTI_GLI_ARTICOLI = { tipo: "link", testo: `${SITE_URL}/#blog`, etichetta: "Tutti gli articoli" };
+
 function buildContenuto(post) {
   const filtered = post.contenuto.filter((b) => !isSocialBlock(b) && !isBlogHomeLink(b));
-  const linkBlogHome = { tipo: "link", testo: `${SITE_URL}/#blog`, etichetta: "Leggi altri articoli sul blog" };
 
   const idx = filtered.findIndex((b) => b.tipo === "titoletto" && b.testo.trim().toLowerCase() === "leggi anche");
   if (idx === -1) {
-    filtered.push(linkBlogHome);
+    filtered.push(FALLBACK_TUTTI_GLI_ARTICOLI);
     return filtered;
   }
-  let insertAt = idx + 1;
-  if (filtered[insertAt] && filtered[insertAt].tipo === "paragrafo") insertAt++;
-  filtered.splice(insertAt, 0, linkBlogHome);
+  let cursor = idx + 1;
+  if (filtered[cursor] && filtered[cursor].tipo === "paragrafo") cursor++;
+  const haLinkCorrelati = filtered[cursor] && filtered[cursor].tipo === "link";
+  if (!haLinkCorrelati) {
+    filtered.splice(cursor, 0, FALLBACK_TUTTI_GLI_ARTICOLI);
+  }
   return filtered;
 }
 
