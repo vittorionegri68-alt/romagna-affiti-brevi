@@ -398,6 +398,34 @@ function slugify(id) {
     .replace(/^-+|-+$/g, "");
 }
 
+// Interpreta la sintassi [[etichetta|id-articolo-target]] dentro il testo di
+// un paragrafo del blog e la trasforma in link cliccabili verso la pagina
+// statica dell'articolo target (stessa sintassi usata da
+// generate-blog-pages.mjs per le pagine /post/). Si appoggia allo slugify già
+// esistente per calcolare l'URL. Il link si apre sempre in una nuova scheda.
+const INTERNAL_LINK_RE = /\[\[([^\]|]+)\|([^\]]+)\]\]/g;
+function renderTestoConLink(testo) {
+  const parts = [];
+  let lastIndex = 0;
+  let match;
+  let key = 0;
+  INTERNAL_LINK_RE.lastIndex = 0;
+  while ((match = INTERNAL_LINK_RE.exec(testo)) !== null) {
+    if (match.index > lastIndex) parts.push(testo.slice(lastIndex, match.index));
+    const [, label, targetId] = match;
+    const href = `https://www.romagna-affitti-brevi.it/post/${slugify(targetId)}.html`;
+    parts.push(
+      <a key={key++} href={href} target="_blank" rel="noopener noreferrer"
+        style={{ color: C.gold, textDecoration: "underline", textDecorationColor: "rgba(160,120,42,0.4)", textUnderlineOffset: "2px" }}>
+        {label}
+      </a>
+    );
+    lastIndex = INTERNAL_LINK_RE.lastIndex;
+  }
+  if (lastIndex < testo.length) parts.push(testo.slice(lastIndex));
+  return parts;
+}
+
 function BlogSection() {
   const [selected, setSelected] = useState(null);
   const [shared, setShared] = useState(null);
@@ -486,23 +514,30 @@ function BlogSection() {
               if (b.tipo === "paragrafo") return (
                 <p key={i} style={{ fontSize: "0.95rem", color: C.textMid,
                   lineHeight: 1.85, fontFamily: "'DM Sans',sans-serif",
-                  marginBottom: "1.25rem" }}>{b.testo}</p>
+                  marginBottom: "1.25rem" }}>{renderTestoConLink(b.testo)}</p>
               );
               if (b.tipo === "titoletto") return (
                 <h4 key={i} style={{ fontFamily: "'Cormorant Garamond','Playfair Display',serif",
                   fontSize: "1.25rem", color: C.text, fontWeight: 700,
                   margin: "2rem 0 0.75rem", letterSpacing: "-0.01em" }}>{b.testo}</h4>
               );
-              if (b.tipo === "link") return (
-                <a key={i} href={b.testo} target="_blank" rel="noopener noreferrer"
-                  style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem",
-                    color: C.gold, fontFamily: "'DM Sans',sans-serif", fontSize: "0.82rem",
-                    fontWeight: 700, letterSpacing: "0.08em", textDecoration: "none",
-                    borderBottom: `1px solid ${C.gold}`, paddingBottom: "0.1rem",
-                    marginBottom: "1rem", marginRight: "1.5rem" }}>
-                  {b.etichetta || b.testo} ↗
-                </a>
-              );
+              if (b.tipo === "link") {
+                const isInstagram = b.testo.includes("instagram.com");
+                const label = b.etichetta ? b.etichetta : isInstagram ? "Instagram" : b.testo;
+                const icona = isInstagram
+                  ? <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4.2" /><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none" /></svg>
+                  : null;
+                return (
+                  <a key={i} href={b.testo} target="_blank" rel="noopener noreferrer"
+                    style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem",
+                      color: C.gold, fontFamily: "'DM Sans',sans-serif", fontSize: "0.82rem",
+                      fontWeight: 700, letterSpacing: "0.08em", textDecoration: "none",
+                      borderBottom: `1px solid ${C.gold}`, paddingBottom: "0.1rem",
+                      marginBottom: "1rem", marginRight: "1.5rem" }}>
+                    {icona}{label} ↗
+                  </a>
+                );
+              }
               return null;
             })}
             <div style={{ marginTop: "3rem", paddingTop: "2rem",
