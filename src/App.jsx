@@ -67,6 +67,7 @@ function Nav() {
     { label: "Strutture", href: "#strutture" },
     { label: "Blog", href: "#blog" },
     { label: "FAQ", href: "#faq" },
+    { label: "Contatti", href: "#contatti" },
     { label: "Chi Siamo", href: "/chi-siamo.html" },
     { label: "EN", href: "https://www.romagna-short-stay.com/" },
     { label: "IT", href: "https://www.romagna-affitti-brevi.it/" },
@@ -689,6 +690,99 @@ function CtaBanner() {
   );
 }
 
+function Contatti() {
+  const [sending, setSending] = useState(false);
+  const [sent, setSent] = useState(false);
+  const [error, setError] = useState(false);
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+    if (form.website.value) { setSent(true); return; } // honeypot: bot, finge successo
+    const payload = {
+      name: form.name.value.trim(),
+      email: form.email.value.trim(),
+      message: form.message.value.trim(),
+      website: "",
+      source: location.hostname + location.pathname,
+    };
+    try {
+      setSending(true);
+      setError(false);
+      const res = await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) throw new Error("bad status");
+      setSent(true);
+      form.reset();
+    } catch (err) {
+      setError(true);
+    } finally {
+      setSending(false);
+    }
+  }
+
+  const inputStyle = {
+    width: "100%",
+    padding: "0.85rem 1rem",
+    fontFamily: "'DM Sans',sans-serif",
+    fontSize: "0.9rem",
+    color: C.text,
+    background: "#fff",
+    border: `1.5px solid ${C.border}`,
+    outline: "none",
+    transition: "border-color 0.2s",
+  };
+
+  return (
+    <section id="contatti" style={{ background: C.bg2, padding: "7rem 2rem" }}>
+      <div style={{ maxWidth: 640, margin: "0 auto" }}>
+        <Reveal>
+          <div style={{ fontSize: "0.65rem", letterSpacing: "0.28em", color: C.gold, textTransform: "uppercase", fontFamily: "'DM Sans',sans-serif", marginBottom: "1rem", display: "flex", alignItems: "center", gap: "0.65rem" }}>
+            <span style={{ width: 26, height: 1, background: C.gold, display: "inline-block" }} /> Contatti
+          </div>
+          <h2 style={{ fontFamily: "'Cormorant Garamond','Playfair Display',serif", fontSize: "clamp(1.8rem,3.5vw,3rem)", color: C.text, fontWeight: 700, lineHeight: 1.1, marginBottom: "1rem", letterSpacing: "-0.02em" }}>
+            Non sai quale<br /><span style={{ color: C.gold, fontStyle: "italic" }}>struttura scegliere?</span>
+          </h2>
+          <p style={{ fontSize: "0.92rem", color: C.textMid, lineHeight: 1.8, fontFamily: "'DM Sans',sans-serif", marginBottom: "2.2rem" }}>
+            Scrivici la tua richiesta, le date o la zona che ti interessa: ti aiutiamo a
+            trovare la struttura giusta tra quelle della directory. Rispondiamo di solito
+            entro poche ore.
+          </p>
+
+          {sent ? (
+            <div style={{ padding: "1.5rem", background: "#fff", border: `1.5px solid ${C.gold}`, fontFamily: "'DM Sans',sans-serif", fontSize: "0.92rem", color: C.text }}>
+              Messaggio inviato. Ti risponderemo il prima possibile.
+            </div>
+          ) : (
+            <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+              <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true"
+                style={{ position: "absolute", left: "-9999px", width: 1, height: 1, opacity: 0 }} />
+              <input type="text" name="name" placeholder="Nome" required style={inputStyle} />
+              <input type="email" name="email" placeholder="Email" required style={inputStyle} />
+              <textarea name="message" placeholder="Messaggio" rows={4} required style={{ ...inputStyle, resize: "vertical" }} />
+              <button type="submit" disabled={sending}
+                style={{ alignSelf: "flex-start", background: C.gold, color: "#fff", padding: "0.95rem 2.2rem", fontSize: "0.78rem", fontWeight: 800, letterSpacing: "0.12em", textTransform: "uppercase", border: "none", cursor: sending ? "default" : "pointer", opacity: sending ? 0.7 : 1, fontFamily: "'DM Sans',sans-serif", transition: "all 0.25s" }}
+                onMouseEnter={e => { if (!sending) e.currentTarget.style.background = "#8a6520"; }}
+                onMouseLeave={e => { e.currentTarget.style.background = C.gold; }}>
+                {sending ? "Invio in corso…" : "Invia messaggio"}
+              </button>
+              {error && (
+                <div style={{ fontFamily: "'DM Sans',sans-serif", fontSize: "0.82rem", color: "#b4453a" }}>
+                  Non siamo riusciti a inviare il messaggio. Riprova, oppure scrivici
+                  direttamente a luceacollection@gmail.com.
+                </div>
+              )}
+            </form>
+          )}
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
 // ── Footer ────────────────────────────────────────────────────────────────────
 function Footer() {
   return (
@@ -709,6 +803,7 @@ function Footer() {
             {[
               { label: "Blog", href: "#blog" },
               { label: "FAQ", href: "#faq" },
+              { label: "Contatti", href: "#contatti" },
               { label: "Privacy", href: "/privacy.html" },
               { label: "EN", href: "https://www.romagna-short-stay.com/" },
               { label: "IT", href: "https://www.romagna-affitti-brevi.it/" },
@@ -810,6 +905,7 @@ export default function App() {
       <BlogSection />
       <DiagonalDivider flip />
       <QandASection />
+      <Contatti />
       <CtaBanner />
       <Footer />
 
