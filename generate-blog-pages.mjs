@@ -258,7 +258,7 @@ ${bodyBlocks}
           </a>
         </div>
       </div>
-      <footer><a href="${SITE_URL}/">Romagna Affitti Brevi — Torna alla home</a></footer>
+      <footer><a href="${SITE_URL}/">Romagna Affitti Brevi. Torna alla home</a></footer>
     </div>
     <script>
       (function () {
